@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR&display=swap');
+.storyline {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0 auto;
+  width: 96%;
+  height: 6.8em;
+  background-color: #e0cfbc; /*#ccb69e;*/
+  font-size: 1.2em;
+  /* text-align: center; */
+}
+
+.character-text {
+  height: 4.8em;
+}
+
+.btn {
+  text-align: right;
+}
+
+.select-box {
+  font-family: 'Noto Sans KR', sans-serif;
+  
+}
+
+.text-area {
+  font-family: 'Noto Sans KR', sans-serif;
+}
