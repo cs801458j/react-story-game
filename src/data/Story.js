@@ -91,11 +91,11 @@ export const gameStory = [
     contents: [
       {
         character: 'STAGE 2',
-        sentence: '어디로든 버섯을 먹고 한 군데만 가야한다면 - 스토리 아직 안씀',
+        sentence: '좋아. 그러면 버섯을 먹고 어디로 갈 지 생각하면 되는거지?',
       },
       {
         character: '',
-        sentence: '근데 어떤 누나한테 가지?',
+        sentence: '근데 어디로 가지?',
       },
       {
         character: '선택',
@@ -253,6 +253,50 @@ export const stageStory = [
         {
           character: '획득',
           sentence: "진람쥐는 '용기의 버섯'을(를) 획득했다 !",
+        },
+        {
+          character: '버섯요정',
+          sentence: "축하해. 용기의 버섯을 획득했구나.",
+        },
+        {
+          character: '진람쥐',
+          sentence: "용기의 버섯? 뭐야 이거 뭐 일곱개 모아야 사람되고 ... 그런거야?",
+        },
+        {
+          character: '버섯요정',
+          sentence: "그건 드래곤볼이고.. 앞으로 두 가지 버섯만 모으면 넌 사람이 될 수 있어",
+        },
+        {
+          character: '진람쥐',
+          sentence: "그렇구나... 그러면 다음 버섯을 모으려면 어떻게 해야하니 버섯요정아?",
+        },
+        {
+          character: '버섯요정',
+          sentence: "후훗. 그건 바로바로 ~ 쨘!",
+        },
+        {
+          character: '',
+          sentence: "펑 하는 소리와 함께 나타난 그것은 ... 바로 작고 소중한 버섯이었다.",
+        },
+        {
+          character: '진람쥐',
+          sentence: "?? 이게 뭐야.",
+        },
+        {
+          character: '버섯요정',
+          sentence: "이건 바로 먹으면 어디로든 갈 수 있는 어디로든 버섯이야.",
+        },
+        {
+          character: '진람쥐',
+          sentence: "이거 그냥 어디로든 문 짭 아니야?",
+        },
+        {
+          character: '버섯요정',
+          sentence: "큼큼.. 무슨 그런 섭섭한 버섯.. 아니 섭섭한 소리를",
+        },
+        {
+          character: '버섯요정',
+          sentence: "아무튼 이 버섯을 먹으면서 너가 가고싶은 곳을 마음속 깊이 생각하면 그곳으로 이동할 수 있어!",
         },
       ],
     },
