@@ -15,7 +15,7 @@ const GameStart = () => {
   const [selections, setSelections] = useState([]);
   const [missionStatus, setMissionStatus] = useState(true); // 현재 미션이 성공인지, 실패인지 판단하는 함수
   const [mode, setMode] = useState(''); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
-  const [value, setValue] = useState(1);
+  const [select, setSelect] = useState(1);
 
   // 대화 - dialog, 선택지 selection
 
@@ -44,9 +44,9 @@ const GameStart = () => {
       // stage mode 이면
       isStageMode(mode);
 
-      setDisplay(gameStory[stageId + 1]);
-      setStageId(stageId + 1);
-      setCurrentMessage(0);
+      // setDisplay(gameStory[stageId + 1]);
+      // setStageId(stageId + 1);
+      // setCurrentMessage(0);
 
       // stage이면
     }
@@ -54,27 +54,34 @@ const GameStart = () => {
 
   const isStageMode = (currentMode) => {
     //  stage 모드라면, story 모드로 돌려주기
+    console.log('currentMode', currentMode);
+    console.log('stageId', stageId);
     if (currentMode === 'stage') {
       setDisplay(gameStory[stageId + 1]);
       setStageId(stageId + 1);
       setCurrentMessage(0);
       return;
     }
+
+    setDisplay(gameStory[stageId + 1]);
+    setStageId(stageId + 1);
+    setCurrentMessage(0);
   };
 
   // 선택지 선택 -> todo: 로직
   const selectAnswer = () => {
     //console.log('선택지 value', value)
     //setDisplay(stageOneStory[0]);
-    switch (value) {
+    console.log(select);
+    switch (select) {
       case 0:
         setCurrentMessage(0);
-        setDisplay(stageStory[stageId - 1][value]);
+        setDisplay(stageStory[stageId - 1][select]);
         setMode('stage'); //  stage mode로 변경
         break;
       case 1:
         setCurrentMessage(0);
-        setDisplay(stageStory[stageId - 1][value]);
+        setDisplay(stageStory[stageId - 1][select]);
         setMode('stage'); //  stage mode로 변경
         break;
       default:
@@ -82,9 +89,10 @@ const GameStart = () => {
     }
   };
 
-  const onChange = (e) => {
+  //  선택지 변경 handler
+  const onChangeSelect = (e) => {
     //console.log('radio checked', e.target.value);
-    setValue(e.target.value);
+    setSelect(e.target.value);
   };
 
   // 선택지 스토리 진행
@@ -124,7 +132,7 @@ const GameStart = () => {
       {display && display.contents[currentMessage].character === '선택' && gameSelection && (
         <div className="select-box">
           <div>
-            <Radio.Group onChange={onChange} value={value}>
+            <Radio.Group onChange={onChangeSelect} value={select}>
               <Space direction="vertical">
                 <Radio value={0}>{selections[stageId - 1].selections[0]}</Radio>
                 <Radio value={1}>{selections[stageId - 1].selections[1]}</Radio>

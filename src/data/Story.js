@@ -85,6 +85,24 @@ export const gameStory = [
       },
     ],
   },
+  {
+    stageId: 2,
+    stageTitle: '어디로든 버섯(문) ',
+    contents: [
+      {
+        character: 'STAGE 2',
+        sentence: '어디로든 버섯을 먹고 한 군데만 가야한다면 - 스토리 아직 안씀',
+      },
+      {
+        character: '',
+        sentence: '근데 어떤 누나한테 가지?',
+      },
+      {
+        character: '선택',
+        sentence: '골라보자',
+      },
+    ],
+  },
 ];
 
 //  게임 선택지
