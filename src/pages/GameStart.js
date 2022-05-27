@@ -2,7 +2,7 @@ import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Button, Input, Radio, Space  } from "antd";
-import { gameStory, gameSelection, stageOneStory } from "../data/Story";
+import { gameStory, gameSelection, stageStory } from "../data/Story";
 import "../css/Game.css";
 import 'antd/dist/antd.min.css';
 
@@ -44,11 +44,10 @@ const GameStart = () => {
       //console.log('else',stageId)
 
       // stage mode 이면
-      if(mode === "stage") {
+      isStageMode(mode);
 
-      }
 
-      setDisplay(gameStory[stageId+1]);
+      setDisplay(gameStory[stageId+1]); 
       setStageId(stageId+1);
       setCurrentMessage(0);
 
@@ -57,28 +56,30 @@ const GameStart = () => {
   }
 
   const isStageMode = (currentMode) => {
+
+    //  stage 모드라면, story 모드로 돌려주기
     if (currentMode === "stage") {
-      //  story 모드로 돌려주기
       setDisplay(gameStory[stageId+1]);
       setStageId(stageId+1);
       setCurrentMessage(0);
+      return;
     }
   }
 
   // 선택지 선택
   const selectAnswer = () => {
     //console.log('선택지 value', value)
-    setDisplay(stageOneStory[0]);
+    //setDisplay(stageOneStory[0]);
     switch (value) {
       case 0:
         setCurrentMessage(0);
-        setDisplay(stageOneStory[value]);
-        setMode("stage");
+        setDisplay(stageStory[stageId-1][value]);
+        setMode("stage"); //  stage mode로 변경
         break
       case 1:
         setCurrentMessage(0);
-        setDisplay(stageOneStory[value]);
-        setMode("stage");
+        setDisplay(stageStory[stageId-1][value]);
+        setMode("stage");  //  stage mode로 변경  
         break
       default: 
         break
