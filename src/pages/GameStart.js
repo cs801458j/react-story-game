@@ -1,40 +1,38 @@
-import { React, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { Button, Input, Radio, Space  } from "antd";
-import { gameStory, gameSelection, stageStory } from "../data/Story";
-import "../css/Game.css";
+import { React, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Button, Input, Radio, Space } from 'antd';
+import { gameStory, gameSelection, stageStory } from '../data/Story';
+import '../css/Game.css';
 import 'antd/dist/antd.min.css';
-
-import gameTitle from "../images/jh/game_title.jpeg";
+import gameTitle from '../images/game_title.jpeg';
 import Typewriter from 'typewriter-effect';
 
-
 const GameStart = () => {
-
-  const [display, setDisplay] = useState("");
-  const [stageId, setStageId] = useState(0);  //  game stage 변수
-  const [currentMessage, setCurrentMessage] = useState(0);  //  현재 message index
+  const [display, setDisplay] = useState('');
+  const [stageId, setStageId] = useState(0); //  game stage 변수
+  const [currentMessage, setCurrentMessage] = useState(0); //  현재 message index
   const [selections, setSelections] = useState([]);
   const [missionStatus, setMissionStatus] = useState(true); // 현재 미션이 성공인지, 실패인지 판단하는 함수
-  const [mode, setMode] = useState(""); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
+  const [mode, setMode] = useState(''); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
+  const [value, setValue] = useState(1);
 
   // 대화 - dialog, 선택지 selection
 
   useEffect(() => {
     setDisplay(gameStory[0]);
     setSelections(gameSelection);
-    setMode("story"); // To-be: Story.js에서 param으로 줄 수 있게 하기
+    setMode('story'); // To-be: Story.js에서 param으로 줄 수 있게 하기
   }, []);
 
-  useEffect(()=> {
+  useEffect(() => {
     console.log(display);
     //setDisplay(gameStory[stageId]);
-  }, [display])
+  }, [display]);
 
   //  스토리 진행
   const goToNextMessage = () => {
-    console.log(display, stageId)
+    console.log(display, stageId);
     // console.log(gameStory[stageId].contents.length)
     if (currentMessage < display.contents.length - 1) {
       //console.log("currentMessage")
@@ -46,77 +44,66 @@ const GameStart = () => {
       // stage mode 이면
       isStageMode(mode);
 
-
-      setDisplay(gameStory[stageId+1]); 
-      setStageId(stageId+1);
+      setDisplay(gameStory[stageId + 1]);
+      setStageId(stageId + 1);
       setCurrentMessage(0);
 
-      // stage이면 
-    } 
-  }
+      // stage이면
+    }
+  };
 
   const isStageMode = (currentMode) => {
-
     //  stage 모드라면, story 모드로 돌려주기
-    if (currentMode === "stage") {
-      setDisplay(gameStory[stageId+1]);
-      setStageId(stageId+1);
+    if (currentMode === 'stage') {
+      setDisplay(gameStory[stageId + 1]);
+      setStageId(stageId + 1);
       setCurrentMessage(0);
       return;
     }
-  }
+  };
 
-  // 선택지 선택
+  // 선택지 선택 -> todo: 로직
   const selectAnswer = () => {
     //console.log('선택지 value', value)
     //setDisplay(stageOneStory[0]);
     switch (value) {
       case 0:
         setCurrentMessage(0);
-        setDisplay(stageStory[stageId-1][value]);
-        setMode("stage"); //  stage mode로 변경
-        break
+        setDisplay(stageStory[stageId - 1][value]);
+        setMode('stage'); //  stage mode로 변경
+        break;
       case 1:
         setCurrentMessage(0);
-        setDisplay(stageStory[stageId-1][value]);
-        setMode("stage");  //  stage mode로 변경  
-        break
-      default: 
-        break
+        setDisplay(stageStory[stageId - 1][value]);
+        setMode('stage'); //  stage mode로 변경
+        break;
+      default:
+        break;
     }
-
-  }
-
-  // 선택지 스토리 진행
-  const storyContinue = () => {
-
-  }
-
-  // 미션 실패 했을 때, 팝업 띄우고 다시 처음 스테이지로 돌아가게 하는 함수
-  // const missionFail = () =>{
-
-  // }
-
-  const [value, setValue] = useState(1);
+  };
 
   const onChange = (e) => {
     //console.log('radio checked', e.target.value);
     setValue(e.target.value);
   };
 
+  // 선택지 스토리 진행
+  //const storyContinue = () => { };
+  // 미션 실패 했을 때, 팝업 띄우고 다시 처음 스테이지로 돌아가게 하는 함수
+  // const missionFail = () =>{
+
+  // }
 
   return (
     <>
-      <div style={{margin: "0 auto", textAlign: "center"}}>
-        <img src={gameTitle} style={{width: "96%", textAlign: "center"}} alt="게임화면" />
+      <div style={{ margin: '0 auto', textAlign: 'center' }}>
+        <img src={gameTitle} style={{ width: '96%', textAlign: 'center' }} alt="게임화면" />
       </div>
-      
-        { (display && display.contents[currentMessage].character !== "선택" ) && 
-        <div className ="storyline">
+
+      {display && display.contents[currentMessage].character !== '선택' && (
+        <div className="storyline">
           <div className="character-text">
-            <div>
-              {display.contents[currentMessage].character}
-            </div>
+            <div>{display.contents[currentMessage].character}</div>
             <Typewriter
               options={{
                 strings: display.contents[currentMessage].sentence,
@@ -127,32 +114,33 @@ const GameStart = () => {
             />
           </div>
           <div className="btn">
-          <Button onClick={goToNextMessage} style={{textAlign: "center"}}>다음</Button>
+            <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
+              다음
+            </Button>
+          </div>
         </div>
-      </div>
-        }
-        
-      {
-        (display && display.contents[currentMessage].character === "선택" ) && ( gameSelection && 
-          <div className="select-box">
-            <div>
-              <Radio.Group onChange={onChange} value={value}>
-                <Space direction="vertical">
-                  <Radio value={0}>{selections[stageId-1].selections[0]}</Radio>
-                  <Radio value={1}>{selections[stageId-1].selections[1]}</Radio>
-                  <Radio value={2}>{selections[stageId-1].selections[2]}</Radio>
-                </Space>
-              </Radio.Group>
-            </div>
-            <div>
-              <Button onClick={selectAnswer} style={{textAlign: "center"}}>선택</Button>
-            </div>   
+      )}
+
+      {display && display.contents[currentMessage].character === '선택' && gameSelection && (
+        <div className="select-box">
+          <div>
+            <Radio.Group onChange={onChange} value={value}>
+              <Space direction="vertical">
+                <Radio value={0}>{selections[stageId - 1].selections[0]}</Radio>
+                <Radio value={1}>{selections[stageId - 1].selections[1]}</Radio>
+                <Radio value={2}>{selections[stageId - 1].selections[2]}</Radio>
+              </Space>
+            </Radio.Group>
+          </div>
+          <div>
+            <Button onClick={selectAnswer} style={{ textAlign: 'center' }}>
+              선택
+            </Button>
+          </div>
         </div>
-        )
-      }
-      
+      )}
     </>
-  )
-}
+  );
+};
 
 export default GameStart;

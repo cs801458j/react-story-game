@@ -1,12 +1,25 @@
 # React Story Game
+
 - react web story game project
 
-
 # 프로젝트 셋팅 방법
+
 1. npm 설치되어 있는지 확인(설치 되어있지 않았으면 node.js 홈페이지에서 LTS 버전으로 install)
 2. 설치 후, 프로젝트 클론
 3. 클론된 프로젝트에서 npm install 로 패키지 설치
 4. npm install 이후 npm start -> localhost 에서 프로젝트 실행 가능
+
+# eslint & prettier 설치
+
+1. 프로젝트 디렉토리 내부에서 설치해준다.
+
+```
+  npm install eslint-plugin-prettier eslint-config-prettier --save-dev
+```
+
+2. 참고: https://dev-yakuza.posstree.com/ko/react/prettier/
+
+- lint 규칙은 아직 정리된게 아니라 상의를 통해 규칙 추가하면 됩니다.
 
 # Getting Started with Create React App
 
