@@ -1,6 +1,13 @@
 # React Story Game
 - react web story game project
 
+
+# 프로젝트 셋팅 방법
+1. npm 설치되어 있는지 확인(설치 되어있지 않았으면 node.js 홈페이지에서 LTS 버전으로 install)
+2. 설치 후, 프로젝트 클론
+3. 클론된 프로젝트에서 npm install 로 패키지 설치
+4. npm install 이후 npm start -> localhost 에서 프로젝트 실행 가능
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
