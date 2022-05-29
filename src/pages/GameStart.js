@@ -67,20 +67,24 @@ const GameStart = () => {
     //console.log('선택지 value', value)
     //setDisplay(stageOneStory[0]);
     console.log(select);
-    switch (select) {
-      case 0:
-        setCurrentMessage(0);
-        setDisplay(stageStory[stageId - 1][select]);
-        setMode('stage'); //  stage mode로 변경
-        break;
-      case 1:
-        setCurrentMessage(0);
-        setDisplay(stageStory[stageId - 1][select]);
-        setMode('stage'); //  stage mode로 변경
-        break;
-      default:
-        break;
-    }
+    setCurrentMessage(0);
+    setDisplay(stageStory[stageId - 1][select]);
+    setMode('stage'); //  stage mode로 변경
+
+    // switch (select) {
+    //   case 0:
+    //     setCurrentMessage(0);
+    //     setDisplay(stageStory[stageId - 1][select]);
+    //     setMode('stage'); //  stage mode로 변경
+    //     break;
+    //   case 1:
+    //     setCurrentMessage(0);
+    //     setDisplay(stageStory[stageId - 1][select]);
+    //     setMode('stage'); //  stage mode로 변경
+    //     break;
+    //   default:
+    //     break;
+    // }
   };
 
   //  선택지 변경 handler
@@ -130,20 +134,29 @@ const GameStart = () => {
       )}
 
       {display && display.contents[currentMessage].character === '선택' && gameSelection && (
-        <div className="select-box">
-          <div>
-            <Radio.Group onChange={onChangeSelect} value={select}>
-              <Space direction="vertical">
-                <Radio value={0}>{selections[stageId - 1].selections[0]}</Radio>
-                <Radio value={1}>{selections[stageId - 1].selections[1]}</Radio>
-                <Radio value={2}>{selections[stageId - 1].selections[2]}</Radio>
-              </Space>
-            </Radio.Group>
+        <div>
+          <div style={{ margin: '0 auto', textAlign: 'center' }}>
+            <img
+              src={display.contents[currentMessage].image}
+              style={{ width: '96%', textAlign: 'center' }}
+              alt="게임화면"
+            />
           </div>
-          <div>
-            <Button onClick={selectAnswer} style={{ textAlign: 'center' }}>
-              선택
-            </Button>
+          <div className="select-box">
+            <div>
+              <Radio.Group onChange={onChangeSelect} value={select}>
+                <Space direction="vertical">
+                  <Radio value={0}>{selections[stageId - 1].selections[0]}</Radio>
+                  <Radio value={1}>{selections[stageId - 1].selections[1]}</Radio>
+                  <Radio value={2}>{selections[stageId - 1].selections[2]}</Radio>
+                </Space>
+              </Radio.Group>
+            </div>
+            <div>
+              <Button onClick={selectAnswer} style={{ textAlign: 'center' }}>
+                선택
+              </Button>
+            </div>
           </div>
         </div>
       )}
