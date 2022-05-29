@@ -5,7 +5,8 @@ import GameStart from './pages/GameStart';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<GameStart />} />
+      <Route path="/game-start" element={<GameStart />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 }
