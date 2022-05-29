@@ -20,6 +20,11 @@
   font-size: 1.8em;
 }
 
+.ant-layout-header {
+  background-color: #afdd64;
+
+}
+
 .ant-card-body {
   padding: 5px;
 }
@@ -54,6 +59,41 @@
 
 .footer-wraper {
   padding: 0;
+}
+
+.start {
+  width: 96%;
+  height: 6.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-text {
+  font-size: 1.2em;
+  color: #6c6357;
+  text-shadow: 0.05em 0.05em 0 #e9c242;
+}
+
+.start-btn {
+  width: 8em;
+  border: none;
+  background-color: #6c6357;
+  color: white;
+  border-radius: 1em 1em;
+}
+
+.ant-layout-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #afdd64;
+}
+
+.footer-text {
+  color: #6c6357;
 }
 
 .carousel-image {
