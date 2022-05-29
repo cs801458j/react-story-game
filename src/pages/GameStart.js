@@ -17,7 +17,7 @@ const GameStart = () => {
   const [mode, setMode] = useState(''); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
   const [select, setSelect] = useState(1);
 
-  // 대화 - dialog, 선택지 selection  
+  // 대화 - dialog, 선택지 selection
 
   useEffect(() => {
     setDisplay(gameStory[0]);
@@ -29,8 +29,6 @@ const GameStart = () => {
     console.log(display);
     //setDisplay(gameStory[stageId]);
   }, [display]);
-
-
 
   //  스토리 진행
   const goToNextMessage = () => {
@@ -45,12 +43,6 @@ const GameStart = () => {
 
       // stage mode 이면
       isStageMode(mode);
-
-      // setDisplay(gameStory[stageId + 1]);
-      // setStageId(stageId + 1);
-      // setCurrentMessage(0);
-
-      // stage이면
     }
   };
 
@@ -106,27 +98,33 @@ const GameStart = () => {
 
   return (
     <>
-      <div style={{ margin: '0 auto', textAlign: 'center' }}>
-        <img src={gameTitle} style={{ width: '96%', textAlign: 'center' }} alt="게임화면" />
-      </div>
-
       {display && display.contents[currentMessage].character !== '선택' && (
-        <div className="storyline">
-          <div className="character-text">
-            <div>{display.contents[currentMessage].character}</div>
-            <Typewriter
-              options={{
-                strings: display.contents[currentMessage].sentence,
-                autoStart: true,
-                delay: 100,
-                loop: false,
-              }}
+        <div>
+          <div style={{ margin: '0 auto', textAlign: 'center' }}>
+            <img
+              src={display.contents[currentMessage].image}
+              style={{ width: '96%', textAlign: 'center' }}
+              alt="게임화면"
             />
           </div>
-          <div className="btn">
-            <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
-              다음
-            </Button>
+
+          <div className="storyline">
+            <div className="character-text">
+              <div>{display.contents[currentMessage].character}</div>
+              <Typewriter
+                options={{
+                  strings: display.contents[currentMessage].sentence,
+                  autoStart: true,
+                  delay: 100,
+                  loop: false,
+                }}
+              />
+            </div>
+            <div className="btn">
+              <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
+                다음
+              </Button>
+            </div>
           </div>
         </div>
       )}
