@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&family=Orelega+One&family=Jua&display=swap');
+@font-face {
+  font-family: 'PFStardust';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #components-layout-demo-top .logo {
   float: left;
   width: 120px;
@@ -18,6 +32,11 @@
   /* font-family: 'Abril Fatface', cursive; */
   font-family: 'Fredoka One', cursive;
   font-size: 1.8em;
+}
+
+.header-img {
+  height: 2em;
+  width: 2em;
 }
 
 .ant-layout-header {
@@ -62,8 +81,8 @@
 }
 
 .start {
-  width: 96%;
-  height: 6.8em;
+  width: 100%;
+  height: 10em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,17 +90,25 @@
 }
 
 .start-text {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-family: 'PFStardust';
   color: #6c6357;
   text-shadow: 0.05em 0.05em 0 #e9c242;
 }
 
 .start-btn {
-  width: 8em;
+  width: 6em;
+  height: 2em;
   border: none;
   background-color: #6c6357;
   color: white;
-  border-radius: 1em 1em;
+  border-radius: 3em 3em;
+  font-family: 'DungGeunMo';
+  font-size: 1.3em;
+}
+
+.start-btn:hover {
+  color: #e9c242;
 }
 
 .ant-layout-footer {
@@ -94,6 +121,7 @@
 
 .footer-text {
   color: #6c6357;
+  font-size: 1em;
 }
 
 .carousel-image {
