@@ -21,19 +21,19 @@ const Home = () => {
       <Header className="header">
         <div className="header-logo">
           🍄🍄
-          <img src={headerImg} style={{ width: '15%', height: '15%' }} />
+          <img className="header-img" src={headerImg} />
           🍄🍄
         </div>
       </Header>
       <Content className="layout-wrapper" style={{ padding: '0 1em' }}>
         <div className="footer-wraper" style={{ backgroundColor: 'white' }}>
           <div className="main-image">
-            <img src={gameTitle} style={{ width: '96%', textAlign: 'center' }} />
+            <img src={gameTitle} style={{ width: '100%', textAlign: 'center' }} />
           </div>
           <div className="start">
-            <p className="start-text">진람쥐 구출하러가기</p>
+            <p className="start-text">진람쥐 구출 대작전★</p>
             <Link to="/game-start">
-              <button className="start-btn">START!</button>
+              <button className="start-btn">start!</button>
             </Link>
           </div>
         </div>
