@@ -17,7 +17,7 @@ const GameStart = () => {
   const [mode, setMode] = useState(''); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
   const [select, setSelect] = useState(1);
 
-  // 대화 - dialog, 선택지 selection
+  // 대화 - dialog, 선택지 selection  
 
   useEffect(() => {
     setDisplay(gameStory[0]);
@@ -29,6 +29,8 @@ const GameStart = () => {
     console.log(display);
     //setDisplay(gameStory[stageId]);
   }, [display]);
+
+
 
   //  스토리 진행
   const goToNextMessage = () => {
