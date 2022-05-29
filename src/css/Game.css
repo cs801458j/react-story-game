@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR&display=swap');
+.header-logo {
+  text-align: center;
+  color: azure;
+  /* font-family: 'Orelega One', cursive; */
+  /* font-family: 'Abril Fatface', cursive; */
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.8em;
+}
+
+.header-img {
+  height: 2em;
+  width: 2em;
+}
+
 .storyline {
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0 auto;
@@ -23,4 +37,9 @@
 
 .text-area {
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer-text {
+  color: #6c6357;
+  font-size: 1em;
 }
