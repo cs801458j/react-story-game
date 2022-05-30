@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Button, Input, Layout, Radio, Space, Modal } from 'antd';
 import { gameStory, gameSelection, stageStory } from '../data/Story';
+import Typewriter from 'typewriter-effect';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
 import '../css/Game.css';
 import 'antd/dist/antd.min.css';
-import Typewriter from 'typewriter-effect';
-import headerImg from '../images/header_test.png';
 
 const GameStart = () => {
   const [display, setDisplay] = useState('');
@@ -15,7 +16,7 @@ const GameStart = () => {
   const [selections, setSelections] = useState([]);
   const [mode, setMode] = useState(''); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
   const [select, setSelect] = useState(1);
-  const { Header, Footer } = Layout;
+  //const { Header, Footer } = Layout;
   const [isModalVisible, setIsModalVisible] = useState(false);
   const navigate = useNavigate();
 
@@ -119,13 +120,14 @@ const GameStart = () => {
   return (
     <>
       <Layout>
-        <Header className="header">
+        {/* <Header className="header">
           <div className="header-logo">
             🍄🍄
             <img className="header-img" src={headerImg} />
             🍄🍄
           </div>
-        </Header>
+        </Header> */}
+        <Header />
         {display && display.contents[dialogIndex].character !== '선택' && (
           <div>
             <div style={{ margin: '0 auto', textAlign: 'center' }}>
@@ -194,9 +196,7 @@ const GameStart = () => {
         >
           <p>GAME OVER ... 다시 플레이 하시겠습니까?</p>
         </Modal>
-        <Footer className="footer">
-          <div className="footer-text">🍄 진혁아 생일 축하해! 🍄</div>
-        </Footer>
+        <Footer />
       </Layout>
     </>
   );
