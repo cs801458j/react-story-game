@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR&display=swap');
+
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .header-logo {
   text-align: center;
   color: azure;
@@ -14,7 +21,8 @@
 }
 
 .storyline {
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'DungGeunMo';
   margin: 0 auto;
   width: 96%;
   height: 6.8em;
@@ -32,11 +40,13 @@
 }
 
 .select-box {
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'DungGeunMo';
 }
 
 .text-area {
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'DungGeunMo';
 }
 
 .footer-text {
