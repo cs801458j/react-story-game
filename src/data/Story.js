@@ -498,6 +498,7 @@ export const stageStory = [
       stageId: 1,
       subStageId: 2,
       index: 2,
+      result: 'fail',
       contents: [
         {
           character: '진람쥐',
@@ -747,6 +748,7 @@ export const stageStory = [
       stageId: 2,
       subStageId: 2,
       index: 2,
+      result: 'fail',
       contents: [
         {
           character: '진람쥐',
@@ -1001,6 +1003,7 @@ export const stageStory = [
       stageId: 3,
       subStageId: 2,
       index: 2,
+      result: 'fail',
       contents: [
         {
           character: '진람쥐',
