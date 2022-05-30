@@ -3,10 +3,10 @@
 - react web story game project
 
 # to-do list
-- 스토리 완성 [ x ]
-- 로직 완성 [ x ] 
-  1. 게임 실패했을 때 로직 [ x ] 
-  2. story stage [ x ]
+- 스토리 완성 [x]
+- 로직 완성 [x] 
+  1. 게임 실패했을 때 로직 [x] 
+  2. story stage [x]
 - 선택지 모드 디자인 [ ] 
 - 이미지 추가
 
