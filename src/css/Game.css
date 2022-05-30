@@ -49,6 +49,12 @@
   font-family: 'DungGeunMo';
 }
 
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 .footer-text {
   color: #6c6357;
   font-size: 1em;
