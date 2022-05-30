@@ -344,11 +344,6 @@ export const stageStory = [
           sentence: '하지만 미선느나를 만나지 못해 결국 조언을 얻지 못했다.',
           image: stage_1_reporter_1,
         },
-        {
-          character: '',
-          sentence: 'MISSION FAIL',
-          image: stage_1_reporter_1,
-        },
       ],
     },
     {
@@ -550,11 +545,6 @@ export const stageStory = [
           sentence: '하지만 다람쥐 대학생은 한국사회의 정서상 시청자들이 받아들이기 어려웠다... ',
           image: stage_1_rampung_1,
         },
-        {
-          character: '',
-          sentence: 'MISSION FAIL',
-          image: stage_1_rampung_1,
-        },
       ],
     },
   ],
@@ -624,11 +614,6 @@ export const stageStory = [
         {
           character: '',
           sentence: '그렇게 몸짱 다람쥐가 되어 맨즈헬스 최초 다람쥐 모델이 되었다.',
-          image: black,
-        },
-        {
-          character: '',
-          sentence: 'MISSION FAIL',
           image: black,
         },
       ],
@@ -806,11 +791,6 @@ export const stageStory = [
             '종종 동물농장 패널로 진람쥐를 볼 수 있었다는 소문이 전설처럼 전해졌다고 한다. ',
           image: black,
         },
-        {
-          character: '',
-          sentence: 'MISSION FAIL',
-          image: black,
-        },
       ],
     },
   ],
@@ -866,12 +846,6 @@ export const stageStory = [
         {
           character: '',
           sentence: '결국 아무도 진람쥐가 다람쥐로 변했다는 사실을 믿어주지 않았다.',
-          image: black,
-        },
-
-        {
-          character: '',
-          sentence: 'MISSION FAIL',
           image: black,
         },
       ],
@@ -1060,11 +1034,6 @@ export const stageStory = [
           character: '',
           sentence:
             '브이단이 아무도 믿어주지 않아 ... 결국 혼자 만우절 장난 친 다람쥐가 된 진람쥐.',
-          image: black,
-        },
-        {
-          character: '',
-          sentence: 'MISSION FAIL',
           image: black,
         },
       ],

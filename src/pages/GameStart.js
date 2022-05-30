@@ -185,7 +185,7 @@ const GameStart = () => {
           </div>
         )}
         <Modal
-          title="Game Over ㅠ.ㅠ"
+          title="MISSION FAIL ㅠ.ㅠ"
           visible={isModalVisible}
           onOk={handleOk}
           onCancel={handleCancel}
