@@ -28,7 +28,7 @@ const Home = () => {
           </div>
           <div className="start">
             <p className="start-text">진람쥐 구출 대작전★</p>
-            <Link to="/game-start">
+            <Link to="/game">
               <button className="start-btn">start!</button>
             </Link>
           </div>
