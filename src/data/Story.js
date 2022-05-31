@@ -15,7 +15,7 @@ import stage_1_reporter_1 from '../images/game/stage_1_reporter_1.jpeg';
 export const gameStory = [
   {
     stageId: 0,
-    stageTitle: '어느날 눈 떠보니 내가 다람쥐?',
+    stageTitle: '어느 날 눈 떠보니 내가 다람쥐?',
     contents: [
       {
         character: '',
@@ -24,12 +24,12 @@ export const gameStory = [
       },
       {
         character: '',
-        sentence: '누워있던 진혁은 부엌 쪽에서 풍겨오는 맛있는 냄새에 눈이 번쩍 뜨였다.',
+        sentence: '누워있던 진혁은 부엌에서 풍기는 맛있는 냄새에 눈이 번쩍 뜨였다.',
         image: black,
       },
       {
         character: '',
-        sentence: '냄새를 따라가보니 그곳엔.. 진혁의 어머니가 라면을 먹고 있었다.',
+        sentence: '냄새를 따라가 보니 그곳엔... 어머니께서 라면을 드시고 계는 것이었다.',
         image: black,
       },
       {
@@ -59,23 +59,23 @@ export const gameStory = [
       },
       {
         character: '엄마',
-        sentence: '괜찮아. 버섯라면은 밀가루 아니고 버섯 99.9%야',
+        sentence: '괜찮아. 버섯 라면은 밀가루 아니고 버섯 99.9% 야.',
         image: black,
       },
       {
         character: '진혁',
-        sentence: '진짜요? 그럼 그냥 먹고 잘까',
+        sentence: '진짜요? 그럼 그냥 먹고 잘까.',
         image: black,
       },
       {
         character: '엄마',
-        sentence: '그래. 이건 어차피 살도 안쪄. ',
+        sentence: '그래. 이건 어차피 살도 안쪄.',
         image: black,
       },
       {
         character: '',
         sentence:
-          '결국 진혁은 버섯라면을 두 봉지 끓여서 맛있게 먹었다. 그리고 행복한 마음으로 방에 돌아가 바로 잠들었다.  ',
+          '결국 진혁은 버섯 라면을 두 봉지 끓여서 맛있게 먹었다. 그리고 행복한 마음으로 방에 돌아가 바로 잠들었다.',
         image: black,
       },
       {
@@ -85,7 +85,7 @@ export const gameStory = [
       },
       {
         character: '진혁',
-        sentence: '으음.. 일어나야하는데',
+        sentence: '으음.. 일어나야 하는데',
         image: black,
       },
       {
@@ -96,12 +96,12 @@ export const gameStory = [
       {
         character: '',
         sentence:
-          '침대 옆 책상 머리맡에 둔 안경이 이렇게 멀었나 생각하며 안경을 쓴 진혁. 손을 보고 화들짝 놀라며 거울을 들었다',
+          '침대 옆 책상머리맡에 둔 안경이 이렇게 멀었나 생각하며 안경을 쓴 진혁. 손을 보고 화들짝 놀라며 거울을 들었다.',
         image: black,
       },
       {
         character: '',
-        sentence: '거울에 비친 모습은 이진혁 ... 아니 다람쥐 한 마리였다.',
+        sentence: '거울에 비친 모습은 이진혁... 아니 다람쥐 한 마리였다.',
         image: stage_0_4,
       },
       {
@@ -111,7 +111,7 @@ export const gameStory = [
       },
       {
         character: '',
-        sentence: '그 순간, 방 한 구석에서 펑 하는 소리가 발생했다.',
+        sentence: '그 순간, 방 한구석에서 펑 하는 소리가 발생했다.',
         image: stage_0_6,
       },
       {
@@ -121,7 +121,7 @@ export const gameStory = [
       },
       {
         character: '',
-        sentence: '고개를 돌린 그 곳엔 빛이 나는 무언가가 있었다.',
+        sentence: '고개를 돌린 그곳엔 빛이 나는 무언가가 있었다.',
         image: stage_0_7,
       },
       {
@@ -131,12 +131,12 @@ export const gameStory = [
       },
       {
         character: '',
-        sentence: '그 곳엔 거대 버섯요정이 있었다.',
+        sentence: '그곳엔 거대 버섯요정이 있었다.',
         image: stage_0_9,
       },
       {
         character: '????',
-        sentence: '왔구나',
+        sentence: '왔구나.',
         image: stage_0_9,
       },
       {
@@ -146,7 +146,7 @@ export const gameStory = [
       },
       {
         character: '버섯요정',
-        sentence: '난 버섯라면의 저주에 걸린 사람들만 만날 수 있다는 버섯요정이야',
+        sentence: '난 버섯라면의 저주에 걸린 사람들만 만날 수 있다는 버섯요정이야.',
         image: stage_0_9,
       },
       {
@@ -156,7 +156,7 @@ export const gameStory = [
       },
       {
         character: '버섯요정',
-        sentence: 'ㅇㅇ 넌 어젯밤에 버섯라면을 두 봉지나 끓여먹었기 때문에 버섯의 저주에 걸렸어.',
+        sentence: 'ㅇㅇ 넌 어젯밤에 버섯라면을 두 봉지나 끓여 먹었기 때문에 버섯의 저주에 걸렸어.',
         image: stage_0_10,
       },
       {
@@ -166,27 +166,27 @@ export const gameStory = [
       },
       {
         character: '버섯요정',
-        sentence: '맞아 그럴수도 있지.. 하지만 넌 엄마의 탈을 쓴 악마버섯 시험에 넘어간거야!',
+        sentence: '맞아 그럴 수도 있지... 하지만 넌 엄마의 탈을 쓴 악마버섯 시험에 넘어간 거야!',
         image: stage_0_11,
       },
       {
         character: '진혁',
-        sentence: '어젯밤.. 나랑 얘기 한 사람이 엄마가 아니고 악마버섯이었다구?!',
+        sentence: '어젯밤... 나랑 얘기 한 사람이 엄마가 아니고 악마버섯이었다구?!',
         image: stage_0_11,
       },
       {
         character: '버섯요정',
-        sentence: '그래. 드디어 상황 파악이 됐구나? ',
+        sentence: '그래. 드디어 상황 파악이 됐구나?',
         image: stage_0_11,
       },
       {
         character: '진혁',
-        sentence: '그러면 내가.. 사람으로 돌아가려면 어떻게 해야하니 버섯요정아ㅠㅠ',
+        sentence: '그러면 내가... 사람으로 돌아가려면 어떻게 해야 하니 버섯요정아ㅠㅠ',
         image: stage_0_11,
       },
       {
         character: '버섯요정',
-        sentence: '지금부터 세가지 미션을 통과하면 널 다시 사람으로 돌려줄게.',
+        sentence: '지금부터 세 가지 미션을 통과하면 널 다시 사람으로 돌려줄게.',
         image: stage_0_11,
       },
       {
@@ -202,7 +202,7 @@ export const gameStory = [
     contents: [
       {
         character: 'STAGE 1',
-        sentence: '그래! 일단 친한 누나를 만나서 상황을 어떻게 해결해야할지 물어보자.',
+        sentence: '그래! 일단 친한 누나를 만나서 상황을 어떻게 해결해야 할지 물어보자.',
         image: black,
       },
       {
@@ -212,18 +212,18 @@ export const gameStory = [
       },
       {
         character: '선택',
-        sentence: '골라보자',
+        sentence: '골라보자.',
         image: black,
       },
     ],
   },
   {
     stageId: 2,
-    stageTitle: '어디로든 버섯(문) ',
+    stageTitle: '어디로든 버섯(문)',
     contents: [
       {
         character: 'STAGE 2',
-        sentence: '좋아. 그러면 버섯을 먹고 어디로 갈 지 생각하면 되는거지?',
+        sentence: '좋아. 그러면 버섯을 먹고 어디로 갈지 생각하면 되는 거지?',
         image: black,
       },
       {
@@ -233,14 +233,14 @@ export const gameStory = [
       },
       {
         character: '선택',
-        sentence: '골라보자',
+        sentence: '골라보자.',
         image: black,
       },
     ],
   },
   {
     stageId: 3,
-    stageTitle: '브이단에게 말하자',
+    stageTitle: '브이단에게 말하자!',
     contents: [
       {
         character: 'STAGE 3',
@@ -305,7 +305,7 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '안녕하세요~ 혹시 미선느나 지금 어디에 계신가요?',
+          sentence: '안녕하세요~ 혹시 미선느나 지금 어디에 계세요?',
           image: stage_1_1,
         },
         {
@@ -316,7 +316,7 @@ export const stageStory = [
         {
           character: '스탭',
           sentence:
-            '안그래도 오늘 미선누님이 몸이 안 좋아서 MC 대타가 급하게 필요했는데 너가 하면 되겠다',
+            '안 그래도 오늘 미선누님이 몸이 안 좋아서 MC 대타가 급하게 필요했는데 네가 하면 되겠다.',
           image: stage_1_1,
         },
         {
@@ -326,17 +326,17 @@ export const stageStory = [
         },
         {
           character: '스탭',
-          sentence: '그게 중요한게 아니야 지금 .. 빨리 스탠바이 하자',
+          sentence: '그게 중요한 게 아니야 지금 ... 빨리 스탠바이 하자.',
           image: stage_1_1,
         },
         {
           character: '',
-          sentence: '그렇게 .. 진람쥐는 다람쥐인채로 주접리포터로 주접이 풍년에 나가게 되었다.',
+          sentence: '그렇게 ... 진람쥐는 다람쥐인 채로 주접리포터로 주접이 풍년에 나가게 되었다.',
           image: stage_1_reporter_1,
         },
         {
           character: '',
-          sentence: '다람쥐리포터는 특유의 귀여움으로 소소한 화제가 되었다.',
+          sentence: '다람쥐 리포터는 특유의 귀여움으로 소소하게 화제가 되었다.',
           image: stage_1_reporter_1,
         },
         {
@@ -375,7 +375,7 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence:
-            '녜 누나 ... 저 어떡하죠 자고 일어나보니 다람쥐가 됐어요ㅠㅠ 이런 몸으로 방송을 할 수 있을까요? ㅠㅠ',
+            '녜 누나 ... 저 어떡하죠. 자고 일어나보니 다람쥐가 됐어요ㅠㅠ 이런 몸으로 방송을 할 수 있을까요? ㅠㅠ',
           image: black,
         },
         {
@@ -391,7 +391,7 @@ export const stageStory = [
         {
           character: '소현누나',
           sentence:
-            '다람쥐인 지금도 충분히 귀엽고 사랑스러운걸! 오늘 찾아온김에 같이 게스트로 이야기 하다갈래?',
+            '다람쥐인 지금도 충분히 귀엽고 사랑스러운걸! 오늘 찾아온 김에 같이 게스트로 이야기하다 갈래?',
           image: black,
         },
         {
@@ -407,28 +407,28 @@ export const stageStory = [
         {
           character: '',
           sentence:
-            '다람쥐로 변해도 즐겁고 유쾌한 진람쥐의 토크는 107.7mHz과 고릴라를 통해 전국으로 퍼져갔다.',
+            '다람쥐로 변해도 즐겁고 유쾌한 진람쥐의 토크는 107.7 MHz과 고릴라를 통해 전국으로 퍼져갔다.',
           image: black,
         },
         {
           character: '',
-          sentence: 'MISSION SUCCESS',
+          sentence: '🍄 MISSION SUCCESS 🍄',
           image: black,
         },
         {
           character: '소현누나',
-          sentence: '축하해. 미션을 통과했구나. ',
+          sentence: '축하해. 미션을 통과했구나.',
           image: black,
         },
         {
           character: '소현누나',
           sentence:
-            '너는 다람쥐인 모습으로도 용기있게 라디오에 출연했기 때문에 이 버섯을 받을 자격이 있어. ',
+            '너는 다람쥐인 모습으로도 용기 있게 라디오에 출연했기 때문에 이 버섯을 받을 자격이 있어.',
           image: black,
         },
         {
           character: '획득',
-          sentence: "진람쥐는 '용기의 버섯'을(를) 획득했다 !",
+          sentence: "진람쥐는 '용기의 버섯🍄'을(를) 획득했다 !",
           image: black,
         },
         {
@@ -438,17 +438,17 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '용기의 버섯? 뭐야 이거 뭐 일곱개 모아야 사람되고 ... 그런거야?',
+          sentence: '용기의 버섯? 뭐야 이거 뭐 일곱 개 모아야 사람 되고 ... 그런거야?',
           image: black,
         },
         {
           character: '버섯요정',
-          sentence: '그건 드래곤볼이고.. 앞으로 두 가지 버섯만 모으면 넌 사람이 될 수 있어',
+          sentence: '그건 드래곤볼이고... 앞으로 두 가지 버섯만 모으면 넌 사람이 될 수 있어.',
           image: black,
         },
         {
           character: '진람쥐',
-          sentence: '그렇구나... 그러면 다음 버섯을 모으려면 어떻게 해야하니 버섯요정아?',
+          sentence: '그러면 다음 버섯을 모으려면 어떻게 해야 하니 버섯요정아?',
           image: black,
         },
         {
@@ -478,13 +478,13 @@ export const stageStory = [
         },
         {
           character: '버섯요정',
-          sentence: '큼큼.. 무슨 그런 섭섭한 버섯.. 아니 섭섭한 소리를',
+          sentence: '큼큼.. 무슨 그런 섭섭한 버섯... 아니 섭섭한 소리를',
           image: black,
         },
         {
           character: '버섯요정',
           sentence:
-            '아무튼 이 버섯을 먹으면서 너가 가고싶은 곳을 마음속 깊이 생각하면 그곳으로 이동할 수 있어!',
+            '아무튼 이 버섯을 먹으면서 네가 가고 싶은 곳을 마음속 깊이 생각하면 그곳으로 이동할 수 있어!',
           image: black,
         },
       ],
@@ -512,7 +512,7 @@ export const stageStory = [
         },
         {
           character: '스탭',
-          sentence: '오늘은 학교씬이 아니고 법정씬이여서 여기는 없을텐데.. ',
+          sentence: '오늘은 학교씬이 아니고 법정씬이여서 여기는 없을텐데... ',
           image: stage_1_1,
         },
         {
@@ -532,17 +532,17 @@ export const stageStory = [
         },
         {
           character: '',
-          sentence: '그렇게 .. 진람쥐는 다람쥐인채로 왜 오수재인가를 촬영했다.',
+          sentence: '그렇게 .. 진람쥐는 다람쥐인 채로 왜 오수재인가를 촬영했다.',
           image: stage_1_rampung_1,
         },
         {
           character: '',
-          sentence: '진람쥐는 람춘풍으로 로스쿨 최초 다람쥐 대학생설정이 되어버렸다 .',
+          sentence: '진람쥐는 람춘풍으로 로스쿨 최초 다람쥐 학생으로 출연하게 됐다.',
           image: stage_1_rampung_1,
         },
         {
           character: '',
-          sentence: '하지만 다람쥐 대학생은 한국사회의 정서상 시청자들이 받아들이기 어려웠다... ',
+          sentence: '하지만 다람쥐 대학생은 한국 사회의 정서상 시청자들이 받아들이기 어려웠다... ',
           image: stage_1_rampung_1,
         },
       ],
@@ -557,7 +557,7 @@ export const stageStory = [
       contents: [
         {
           character: '진람쥐',
-          sentence: '그래. 사람으로 돌아가려면 체력이 먼저지 .. 헬스장으로 가자',
+          sentence: '그래. 사람으로 돌아가려면 체력이 먼저지 ... 헬스장으로 가자.',
           image: black,
         },
         {
@@ -587,7 +587,7 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '앗 ... 녭',
+          sentence: '앗... 녭',
           image: black,
         },
         {
@@ -598,7 +598,7 @@ export const stageStory = [
         {
           character: '',
           sentence:
-            '종국이형은 다람쥐가 된 걸 신경도 안쓰는것 처럼 보였다. 그저 헬스만 계속 시켰다.. ',
+            '종국이  형은 다람쥐가 된 걸 신경도 안 쓰는 것처럼 보였다. 그저 헬스만 계속 시켰다...',
           image: black,
         },
         {
@@ -608,7 +608,7 @@ export const stageStory = [
         },
         {
           character: '',
-          sentence: '혹독한 PT를 통해 근육빵빵 다람쥐가 된 진람쥐 .',
+          sentence: '혹독한 PT로 근육빵빵 다람쥐가 된 진람쥐.',
           image: black,
         },
         {
@@ -626,7 +626,7 @@ export const stageStory = [
       contents: [
         {
           character: '진람쥐',
-          sentence: '그래. 일단 곡 작업도 해야하니까 체크메이트 형한테 가보자.',
+          sentence: '그래. 일단 곡 작업도 해야 하니까 체크메이트 형한테 가보자.',
           image: black,
         },
         {
@@ -656,7 +656,7 @@ export const stageStory = [
         },
         {
           character: '체크메이트',
-          sentence: '당연하지. 아니 오히려 귀여운 거 같기도? 그러니까 일단 녹음을 하자. ',
+          sentence: '당연하지. 아니 오히려 귀여운 거 같기도? 그러니까 일단 녹음하자.',
           image: black,
         },
         {
@@ -677,13 +677,13 @@ export const stageStory = [
         },
         {
           character: '체크메이트',
-          sentence: '축하해. 미션을 통과했구나. ',
+          sentence: '축하해. 미션을 통과했구나.',
           image: black,
         },
         {
           character: '체크메이트',
           sentence:
-            '너는 다람쥐가 되어도 본업에 충실한 모습 덕분에 능력의 버섯을 받을 자격이 있어.',
+            '너는 다람쥐로 변해도 본업에 충실한 모습 덕분에 능력의 버섯을 받을 자격이 있어.',
           image: black,
         },
         {
@@ -698,7 +698,7 @@ export const stageStory = [
         },
         {
           character: '버섯요정',
-          sentence: '이제 벌써 마지막 단계야. 마지막으로 너가 해야할 일을 알려줄게. ',
+          sentence: '이제 벌써 마지막 단계야. 마지막으로 네가 해야 할 일을 알려줄게. ',
           image: black,
         },
         {
@@ -709,7 +709,7 @@ export const stageStory = [
         {
           character: '버섯요정',
           sentence:
-            '그건 바로 팬들에게 너가 다람쥐가 된 걸 알리는거야. 생각해봐. 팬들은 아직 모르고 있잖아?',
+            '그건 바로 팬들에게 네가 다람쥐가 된 걸 알리는 거야. 생각해봐. 팬들은 아직 모르고 있잖아?',
           image: black,
         },
         {
@@ -724,7 +724,7 @@ export const stageStory = [
         },
         {
           character: '버섯요정',
-          sentence: '영원한 비밀은 없으니까 차라리 빨리 말하는게 나을거 같은데',
+          sentence: '영원한 비밀은 없으니까 차라리 빨리 말하는 게 나을 거 같은데?',
           image: black,
         },
       ],
@@ -737,7 +737,7 @@ export const stageStory = [
       contents: [
         {
           character: '진람쥐',
-          sentence: '그래. 일단 회사에 알려야겠다. ',
+          sentence: '그래. 일단 회사에 알려야겠다.',
           image: black,
         },
         {
@@ -757,7 +757,7 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '저를 못 알아보면 어떡헤요ㅜㅜ 저 진혁이에요.',
+          sentence: '저를 못 알아보면 어떡해요ㅜㅜ 저 진혁이에요.',
           image: black,
         },
         {
@@ -787,8 +787,7 @@ export const stageStory = [
         },
         {
           character: '',
-          sentence:
-            '종종 동물농장 패널로 진람쥐를 볼 수 있었다는 소문이 전설처럼 전해졌다고 한다. ',
+          sentence: '종종 동물농장 패널로 진람쥐를 볼 수 있었다는 소문이 전설처럼 전해졌다고 한다.',
           image: black,
         },
       ],
@@ -818,7 +817,7 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '아니 제가 어제 버섯라면을 먹고 잤는데ㅜ 자고 일어나보니까 이렇게 변했더라구요',
+          sentence: '아니 제가 어제 버섯라면을 먹고 잤는데ㅜ 자고 일어나보니 이렇게 변했더라구요',
           image: black,
         },
         {
@@ -834,13 +833,13 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '아니 여러분. 이거 CG아니고 진짜 저예요. 저 다람쥐가 됐다구요!',
+          sentence: '아니 여러분. 이거 CG 아니고 진짜 저예요. 저 다람쥐가 됐다구요!',
           image: black,
         },
         {
           character: '',
           sentence:
-            "브이앱은 순식간에 화제가 되었다. 다양한 커뮤니티에 '아이돌 브이앱에 CG 적용하는 회사.jpg'로 퍼져나간 진람쥐 브이앱",
+            "브이앱은 순식간에 화제가 됐다. 다양한 커뮤니티에 '아이돌 브이앱에 CG 적용하는 회사.jpg'로 퍼져나간 진람쥐 브이앱",
           image: black,
         },
         {
@@ -889,7 +888,7 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence:
-            '저도 무대에서 여러분을 볼 수 있어서 반가워요 ㅠㅠ 그런데 여러분에게 꼭 해야 할 말이 있어요',
+            '저도 무대에서 여러분을 볼 수 있어서 반가워요 ㅠㅠ 그런데 여러분에게 꼭 해야 할 말이 있어요.',
           image: black,
         },
         {
@@ -900,13 +899,13 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '그래서 변해버린 제 모습에 여러분이 당황할까봐 무대 뒤에서 말을 하고 있어요',
+          sentence: '그래서 변해버린 제 모습에 여러분이 당황할까 봐 무대 뒤에서 말을 하고 있어요.',
           image: black,
         },
         {
           character: '진람쥐',
           sentence:
-            '제가 다람쥐로 변해버려도... 브이단은 저를 아직 사랑하시나요? 다람쥐인 채로 무대를 해도 괜찮을까요',
+            '제가 다람쥐로 변해버려도... 브이단은 저를 아직 사랑하시나요? 다람쥐인 채로 무대를 해도 괜찮을까요.',
           image: black,
         },
         {
@@ -918,12 +917,12 @@ export const stageStory = [
         {
           character: '',
           sentence:
-            '감동받은 진람쥐는 멋진 다람쥐의 모습으로 팬들 앞으로 나와 콘서트를 성공적으로 마무리했다.',
+            '진람쥐는 멋진 다람쥐의 모습으로 팬들 앞으로 나와 콘서트를 성공적으로 마무리했다.',
           image: black,
         },
         {
           character: '',
-          sentence: '브이단의 응원을 받고 자신감을 얻게된 진람쥐',
+          sentence: '브이단의 응원으로 자신감을 얻게 된 진람쥐',
           image: black,
         },
         {
@@ -958,17 +957,17 @@ export const stageStory = [
         },
         {
           character: '진람쥐',
-          sentence: '고마워, 버섯요정아! 그리고 너도 잊지 않을게',
+          sentence: '고마워, 버섯요정아! 그리고 너도 잊지 않을게.',
           image: black,
         },
         {
           character: '',
-          sentence: '펑! 하는 소리와 함께 진람쥐. 아니 진혁은 현실로 돌아왔다. ',
+          sentence: '펑! 하는 소리와 함께 진람쥐. 아니 진혁은 현실로 돌아왔다.',
           image: black,
         },
         {
           character: '진혁',
-          sentence: '끝',
+          sentence: '끝(스토리 생각해서 추가하기)',
           image: black,
         },
       ],
@@ -1032,8 +1031,7 @@ export const stageStory = [
         },
         {
           character: '',
-          sentence:
-            '브이단이 아무도 믿어주지 않아 ... 결국 혼자 만우절 장난 친 다람쥐가 된 진람쥐.',
+          sentence: '브이단이 아무도 믿어주지 않아 ... 결국 혼자 만우절 장난친 다람쥐가 된 진람쥐.',
           image: black,
         },
       ],

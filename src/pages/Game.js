@@ -108,7 +108,7 @@ const Game = () => {
 
   const handleCancel = () => {
     setIsModalVisible(false);
-    navigate('/');
+    navigate('/', { result: 'success' });
   };
 
   //  선택지 변경 handler
