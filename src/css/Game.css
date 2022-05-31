@@ -24,22 +24,11 @@
   /* font-family: 'Noto Sans KR', sans-serif; */
   font-family: 'DungGeunMo';
   margin: 0 auto;
-  padding-top: 1em;
   width: 96%;
-  height: 11em;
-  /* background-color: #e0cfbc; #ccb69e; */
+  height: 6.8em;
+  background-color: #e0cfbc; /*#ccb69e;*/
   font-size: 1.2em;
   /* text-align: center; */
-
-  display: flex;
-  flex-direction: row;
-}
-
-.story-text {
-  width: 100%;
-  padding: 1em;
-  background-color: #e0e0e0;
-  border: 7px solid #3b3b3b;
 }
 
 .character-text {
@@ -53,17 +42,6 @@
 .select-box {
   /* font-family: 'Noto Sans KR', sans-serif; */
   font-family: 'DungGeunMo';
-  background-color: white;
-  border: 1px solid #6c6357;
-  padding: 1em;
-  width: 96%;
-  margin: 1em auto;
-}
-
-.select-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .text-area {
