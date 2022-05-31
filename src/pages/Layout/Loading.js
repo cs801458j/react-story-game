@@ -1,7 +1,11 @@
+import React from 'react';
+import { Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
+
 const Loading = () => {
   return (
     <div>
-      <p>스피너</p>
+      <LoadingOutlined style={{ fontSize: 100 }} spin />
     </div>
   );
 };
