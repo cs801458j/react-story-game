@@ -6,6 +6,8 @@ import { gameStory, gameSelection, stageStory } from '../data/Story';
 import Typewriter from 'typewriter-effect';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
+import Storyleft from '../images/story_left.png';
+import Storyright from '../images/story_right.png';
 import '../css/Game.css';
 import 'antd/dist/antd.min.css';
 
@@ -139,22 +141,26 @@ const GameStart = () => {
             </div>
 
             <div className="storyline">
-              <div className="character-text">
-                <div>{display.contents[dialogIndex].character}</div>
-                <Typewriter
-                  options={{
-                    strings: display.contents[dialogIndex].sentence,
-                    autoStart: true,
-                    delay: 100,
-                    loop: false,
-                  }}
-                />
+              <img src={Storyleft} style={{ height: '10em', float: 'left' }} alt="왼쪽바" />
+              <div className="story-text">
+                <div className="character-text">
+                  <div>{display.contents[dialogIndex].character}</div>
+                  <Typewriter
+                    options={{
+                      strings: display.contents[dialogIndex].sentence,
+                      autoStart: true,
+                      delay: 100,
+                      loop: false,
+                    }}
+                  />
+                </div>
+                <div className="btn">
+                  <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
+                    다음
+                  </Button>
+                </div>
               </div>
-              <div className="btn">
-                <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
-                  다음
-                </Button>
-              </div>
+              <img src={Storyright} style={{ height: '10em', float: 'right' }} alt="오른쪽바" />
             </div>
           </div>
         )}
@@ -178,7 +184,7 @@ const GameStart = () => {
                   </Space>
                 </Radio.Group>
               </div>
-              <div>
+              <div className="select-btn">
                 <Button onClick={selectAnswer} style={{ textAlign: 'center' }}>
                   선택
                 </Button>
