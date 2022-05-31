@@ -968,7 +968,7 @@ export const stageStory = [
         },
         {
           character: '진혁',
-          sentence: '뒤에 내용 조금만 추가',
+          sentence: '끝',
           image: black,
         },
       ],
