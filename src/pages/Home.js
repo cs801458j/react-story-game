@@ -23,8 +23,8 @@ const Home = () => {
       <Header />
       <Content className="layout-wrapper" style={{ padding: '0 1em' }}>
         <div className="footer-wraper" style={{ backgroundColor: 'white' }}>
-          <div className="main-image">
-            <img src={gameTitle} style={{ width: '100%', textAlign: 'center' }} alt={'진람쥐'} />
+          <div className="main-image-wrapper">
+            <img className="main-image" src={gameTitle} alt={'진람쥐'} />
           </div>
           <div className="start">
             <p className="start-text">진람쥐 구출 대작전★</p>

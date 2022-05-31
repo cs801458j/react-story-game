@@ -162,76 +162,25 @@
   margin: 0 auto;
 }
 
+/*  웹으로 플레이 했을 때*/
+.main-image {
+  width: 56%;
+  text-align: center;
+}
+
+.main-image-wrapper {
+  text-align: center;
+}
+
 @media all and (max-width: 1024px) {
   /* //브라우저 창 width가 1024px보다 작아지는 순간부터 적용
     //태블릿 */
-  .home-text {
-    font-family: 'Jua', sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    margin: 0.2em 0;
-    color: #242424;
-  }
-
-  .row-wrapper {
-    width: 75%;
-    margin: 0 auto;
-  }
-  .row-wrapper-test {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .result-content-text {
-    font-family: 'Jua', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    margin: 0.2em 0;
-    color: #242424;
-  }
-  .row-wrapper2 {
-    width: 45%;
-    margin: 0 auto;
-  }
-
-  .carousel-wrapper {
-    width: 75%;
-    margin: 0 auto;
-  }
-  .row-wrapper-up {
-    width: 80%;
-    margin: 0 auto;
-  }
+.main-image {
+  width: 100%;
+}
 }
 
 @media all and (max-width: 768px) {
   /* //브라우저 창 width가 768px보다 작아지는 순간부터 적용
   //모바일 */
-  .carousel-image {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .row-wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .carousel-wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .row-wrapper2 {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .row-wrapper-test {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .row-wrapper-up {
-    width: 100%;
-    margin: 0 auto;
-  }
 }
