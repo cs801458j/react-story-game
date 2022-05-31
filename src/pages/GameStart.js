@@ -18,7 +18,6 @@ const GameStart = () => {
   const [selections, setSelections] = useState([]);
   const [mode, setMode] = useState(''); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
   const [select, setSelect] = useState(1);
-  //const { Header, Footer } = Layout;
   const [isModalVisible, setIsModalVisible] = useState(false);
   const navigate = useNavigate();
 
@@ -44,16 +43,13 @@ const GameStart = () => {
   //  스토리 진행
   const goToNextMessage = () => {
     console.log(display, stageId);
-    // console.log(gameStory[stageId].contents.length)
     if (dialogIndex < display.contents.length - 1) {
-      //console.log("currentMessage")
       setDialogIndex(dialogIndex + 1);
     } else {
-      // 0 말고 다음 단계로 넘어가게 해줘야 할듯
-      //console.log('else',stageId)
-
       // stage mode 이면
       isStageMode(mode);
+
+      //  마지막 최종 엔딩이면 ending 페이지로 이동
     }
   };
 
@@ -112,96 +108,85 @@ const GameStart = () => {
     setSelect(e.target.value);
   };
 
-  // 선택지 스토리 진행
-  //const storyContinue = () => { };
-  // 미션 실패 했을 때, 팝업 띄우고 다시 처음 스테이지로 돌아가게 하는 함수
-  // const missionFail = () =>{
-
-  // }
-
   return (
     <>
-      <Layout>
-        {/* <Header className="header">
-          <div className="header-logo">
-            🍄🍄
-            <img className="header-img" src={headerImg} />
-            🍄🍄
-          </div>
-        </Header> */}
+      <Layout style={{ height: '100%', backgroundColor: 'white' }}>
         <Header />
-        {display && display.contents[dialogIndex].character !== '선택' && (
-          <div>
-            <div style={{ margin: '0 auto', textAlign: 'center' }}>
-              <img
-                src={display.contents[dialogIndex].image}
-                style={{ width: '96%', textAlign: 'center' }}
-                alt="게임화면"
-              />
-            </div>
+        <div className="content-wrapper" style={{ height: '100%' }}>
+          {display && display.contents[dialogIndex].character !== '선택' && (
+            <div>
+              <div className="game-image-wrapper">
+                <img
+                  className="game-image"
+                  src={display.contents[dialogIndex].image}
+                  style={{ textAlign: 'center' }}
+                  alt="게임화면"
+                />
+              </div>
 
-            <div className="storyline">
-              <img src={Storyleft} style={{ height: '10em', float: 'left' }} alt="왼쪽바" />
-              <div className="story-text">
-                <div className="character-text">
-                  <div>{display.contents[dialogIndex].character}</div>
-                  <Typewriter
-                    options={{
-                      strings: display.contents[dialogIndex].sentence,
-                      autoStart: true,
-                      delay: 100,
-                      loop: false,
-                    }}
-                  />
+              <div className="storyline">
+                <img src={Storyleft} style={{ height: '10em', float: 'left' }} alt="왼쪽바" />
+                <div className="story-text">
+                  <div className="character-text">
+                    <div>{display.contents[dialogIndex].character}</div>
+                    <Typewriter
+                      options={{
+                        strings: display.contents[dialogIndex].sentence,
+                        autoStart: true,
+                        delay: 100,
+                        loop: false,
+                      }}
+                    />
+                  </div>
+                  <div className="btn">
+                    <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
+                      다음
+                    </Button>
+                  </div>
                 </div>
-                <div className="btn">
-                  <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
-                    다음
+                <img src={Storyright} style={{ height: '10em', float: 'right' }} alt="오른쪽바" />
+              </div>
+            </div>
+          )}
+
+          {display && display.contents[dialogIndex].character === '선택' && gameSelection && (
+            <div>
+              <div style={{ margin: '0 auto', textAlign: 'center' }}>
+                <img
+                  src={display.contents[dialogIndex].image}
+                  style={{ width: '96%', textAlign: 'center' }}
+                  alt="게임화면"
+                />
+              </div>
+              <div className="select-box">
+                <div>
+                  <Radio.Group onChange={onChangeSelect} value={select}>
+                    <Space direction="vertical">
+                      <Radio value={0}>{selections[stageId - 1].selections[0]}</Radio>
+                      <Radio value={1}>{selections[stageId - 1].selections[1]}</Radio>
+                      <Radio value={2}>{selections[stageId - 1].selections[2]}</Radio>
+                    </Space>
+                  </Radio.Group>
+                </div>
+                <div className="select-btn">
+                  <Button onClick={selectAnswer} style={{ textAlign: 'center' }}>
+                    선택
                   </Button>
                 </div>
               </div>
-              <img src={Storyright} style={{ height: '10em', float: 'right' }} alt="오른쪽바" />
             </div>
-          </div>
-        )}
-
-        {display && display.contents[dialogIndex].character === '선택' && gameSelection && (
-          <div>
-            <div style={{ margin: '0 auto', textAlign: 'center' }}>
-              <img
-                src={display.contents[dialogIndex].image}
-                style={{ width: '96%', textAlign: 'center' }}
-                alt="게임화면"
-              />
-            </div>
-            <div className="select-box">
-              <div>
-                <Radio.Group onChange={onChangeSelect} value={select}>
-                  <Space direction="vertical">
-                    <Radio value={0}>{selections[stageId - 1].selections[0]}</Radio>
-                    <Radio value={1}>{selections[stageId - 1].selections[1]}</Radio>
-                    <Radio value={2}>{selections[stageId - 1].selections[2]}</Radio>
-                  </Space>
-                </Radio.Group>
-              </div>
-              <div className="select-btn">
-                <Button onClick={selectAnswer} style={{ textAlign: 'center' }}>
-                  선택
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
-        <Modal
-          title="MISSION FAIL ㅠ.ㅠ"
-          visible={isModalVisible}
-          onOk={handleOk}
-          onCancel={handleCancel}
-          okText="네"
-          cancelText="아니요"
-        >
-          <p>GAME OVER ... 다시 플레이 하시겠습니까?</p>
-        </Modal>
+          )}
+          <Modal
+            title="MISSION FAIL ㅠ.ㅠ"
+            visible={isModalVisible}
+            onOk={handleOk}
+            onCancel={handleCancel}
+            okText="네"
+            cancelText="아니요"
+          >
+            <p>GAME OVER ... 다시 플레이 하시겠습니까?</p>
+          </Modal>
+        </div>
         <Footer />
       </Layout>
     </>
