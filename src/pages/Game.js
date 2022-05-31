@@ -1,5 +1,4 @@
 import { React, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Button, Input, Layout, Radio, Space, Modal } from 'antd';
 import { gameStory, gameSelection, stageStory } from '../data/Story';
@@ -11,7 +10,7 @@ import Storyright from '../images/story_right.png';
 import '../css/Game.css';
 import 'antd/dist/antd.min.css';
 
-const GameStart = () => {
+const Game = () => {
   const [display, setDisplay] = useState('');
   const [stageId, setStageId] = useState(0); //  game stage 변수
   const [dialogIndex, setDialogIndex] = useState(0); //  현재 message index
@@ -24,10 +23,11 @@ const GameStart = () => {
   // 대화 - dialog, 선택지 selection
 
   useEffect(() => {
+    setStageId(0);
+    setDialogIndex(0);
     setDisplay(gameStory[0]);
     setSelections(gameSelection);
     setMode('story'); // To-be: Story.js에서 param으로 줄 수 있게 하기
-    console.log(isModalVisible);
   }, []);
 
   useEffect(() => {
@@ -53,22 +53,34 @@ const GameStart = () => {
     }
   };
 
+  //  stage 모드라면, story 모드로 돌려주기
   const isStageMode = (currentMode) => {
-    //  stage 모드라면, story 모드로 돌려주기
-    console.log('currentMode', currentMode);
-    console.log('stageId', stageId);
+    console.log('currentMode', currentMode, 'stageId', stageId);
     if (currentMode === 'stage') {
       //   stage fail 조건 체크
+      missionSuccessOrFail();
       console.log(stageStory[stageId - 1][select].result);
-      if (stageStory[stageId - 1][select].result === 'fail') {
-        setIsModalVisible(true);
-        console.log(stageStory[stageId - 1][select].result);
-      } else {
-        setDisplay(gameStory[stageId + 1]);
-        setStageId(stageId + 1);
-        setDialogIndex(0);
-      }
+
       return;
+    }
+
+    setDisplay(gameStory[stageId + 1]);
+    setStageId(stageId + 1);
+    setDialogIndex(0);
+    return;
+  };
+
+  //  mission 성공 실패 여부 판단
+  const missionSuccessOrFail = () => {
+    //  미션 실패
+    if (stageStory[stageId - 1][select].result === 'fail') {
+      setIsModalVisible(true);
+      return;
+    }
+
+    //  미션 성공 & 마지막 최종 엔딩
+    if (stageStory[stageId - 1][select].result === 'success' && stageId === 3) {
+      navigate('/ending');
     }
 
     setDisplay(gameStory[stageId + 1]);
@@ -79,9 +91,6 @@ const GameStart = () => {
 
   // 선택지 선택 -> todo: 로직
   const selectAnswer = () => {
-    // console.log(select);
-    // console.log('stage 클리어 여부', stageStory[stageId - 1][select].result);
-
     setDialogIndex(0);
     setDisplay(stageStory[stageId - 1][select]);
     setMode('stage'); //  stage mode로 변경
@@ -193,4 +202,4 @@ const GameStart = () => {
   );
 };
 
-export default GameStart;
+export default Game;
