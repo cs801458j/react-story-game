@@ -35,12 +35,7 @@
   flex-direction: row;
 }
 
-.story-text {
-  width: 100%;
-  padding: 1em;
-  background-color: #e0e0e0;
-  border: 7px solid #3b3b3b;
-}
+
 
 .character-text {
   height: 4.8em;
@@ -73,7 +68,7 @@
 
 .footer {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
@@ -91,4 +86,45 @@
 }
 .ant-modal {
   pointer-events: all;
+}
+
+.content-wrapper {
+  height: 100%;
+}
+
+/*  게임 이미지 wrapper div */
+.game-image-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1em;
+}
+
+/*  웹으로 플레이 했을 때*/
+.game-image{
+  width: 54%;
+}
+.story-text {
+  width: 100%;
+  padding: 1em;
+  background-color: #e0e0e0;
+  border: 7px solid #3b3b3b;
+}
+
+
+/*  태블릿으로 플레이 했을 때*/
+@media all and (max-width: 1024px) {
+  .game-image{
+    width: 90%;
+  }
+}
+
+/*  소형태블릿 & 모바일로 플레이 했을 때*/
+@media all and (max-width: 768px) {
+  .game-image{
+    width: 96%;
+  }
+
+  .game-image-wrapper {
+    padding-top: 0.6em;
+  }
 }
