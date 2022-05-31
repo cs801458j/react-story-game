@@ -5,7 +5,7 @@ import { LoadingOutlined } from '@ant-design/icons';
 const Loading = () => {
   return (
     <div>
-      <LoadingOutlined style={{ fontSize: 100 }} spin />
+      <LoadingOutlined style={{ fontSize: 100, color: 'blue' }} spin />
     </div>
   );
 };
