@@ -67,13 +67,27 @@ const Ending = () => {
               />
             </div>
             <div className="result-share">
-              <p>야호~! 다시 사람으로 돌아왔어! 다 너희들 덕분이야 ㅠ.ㅠ</p>
+              <p>야호~! 다시 사람으로 돌아왔어!</p>
+              <p>고마워💙 다 너희들 덕분이얌ㅎㅎ</p>
               <p>우리 결과를 함께 공유해볼까?</p>
               <div className="twitter-share">
-                <input onChange={sendTextHandler} value={sendText}></input>
-                <Button onClick={twitterShare}>
+                <input
+                  className="input-place"
+                  placeholder="닉네임이 모야?"
+                  maxLength="20"
+                  onChange={sendTextHandler}
+                  value={sendText}
+                ></input>
+                {/* <Button onClick={twitterShare}>
                   <img onClick={twitterShare} src={Twittericon} alt="twitter"></img>
-                </Button>
+                </Button> */}
+                <img
+                  className="share-btn"
+                  onClick={twitterShare}
+                  src={Twittericon}
+                  alt="twitter"
+                ></img>
+                <p>click!</p>
               </div>
             </div>
           </div>
