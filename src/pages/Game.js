@@ -17,8 +17,9 @@ const Game = () => {
   const [dialogIndex, setDialogIndex] = useState(0); //  현재 message index
   const [selections, setSelections] = useState([]);
   const [mode, setMode] = useState(''); //  현재 게임 스토리인지 스테이지(1,2,3) 인지 구분하는 변수 mode = story, stage
-  const [select, setSelect] = useState(1);
+  const [select, setSelect] = useState(0);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [modalText, setModalText] = useState('GAME OVER ... 다시 플레이 하시겠습니까?');
   const navigate = useNavigate();
 
   // 대화 - dialog, 선택지 selection
@@ -32,18 +33,18 @@ const Game = () => {
   }, []);
 
   useEffect(() => {
-    console.log(display);
+    //console.log(display);
     //setDisplay(gameStory[stageId]);
   }, [display]);
 
   useEffect(() => {
-    console.log(isModalVisible);
+    //console.log(isModalVisible);
     //setDisplay(gameStory[stageId]);
   }, [isModalVisible]);
 
   //  스토리 진행
   const goToNextMessage = () => {
-    console.log(display, stageId);
+    //console.log(display, stageId);
     if (dialogIndex < display.contents.length - 1) {
       setDialogIndex(dialogIndex + 1);
     } else {
@@ -56,11 +57,11 @@ const Game = () => {
 
   //  stage 모드라면, story 모드로 돌려주기
   const isStageMode = (currentMode) => {
-    console.log('currentMode', currentMode, 'stageId', stageId);
+    //console.log('currentMode', currentMode, 'stageId', stageId);
     if (currentMode === 'stage') {
       //   stage fail 조건 체크
       missionSuccessOrFail();
-      console.log(stageStory[stageId - 1][select].result);
+      //console.log(stageStory[stageId - 1][select].result);
 
       return;
     }
@@ -188,10 +189,10 @@ const Game = () => {
           <Modal
             title="MISSION FAIL ㅠ.ㅠ"
             visible={isModalVisible}
-            onOk={handleOk}
-            onCancel={handleCancel}
-            okText="네"
-            cancelText="아니요"
+            onOk={handleCancel}
+            onCancel={handleOk}
+            okText="아니요"
+            cancelText="네"
           >
             <p>GAME OVER ... 다시 플레이 하시겠습니까?</p>
           </Modal>
