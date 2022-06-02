@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -52,6 +52,6 @@
   },
   "homepage": "suddenly-daramji.netlify.app",
   "engines": {
-    "node": "16.15.1"
+    "node": "14.17.3"
   }
 }
