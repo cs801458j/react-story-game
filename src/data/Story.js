@@ -12,7 +12,10 @@ import stage_0_9 from '../images/game/stage_0_9.jpeg';
 import stage_0_10 from '../images/game/stage_0_10.jpeg';
 import stage_0_11 from '../images/game/stage_0_11.jpeg';
 import black from '../images/game/black.jpeg';
-import selection from '../images/game/selection.jpeg';
+// import selection from '../images/game/selection.jpeg';
+import date_1 from '../images/game/date_1.JPG';
+import date_2 from '../images/game/date_2.JPG';
+import selection from '../images/game/selection.JPG';
 //  stage 1
 import stage_1_1 from '../images/game/stage_1_1.jpeg';
 import stage_1_rampung_1 from '../images/game/stage_1_rampung_1.jpeg';
@@ -54,7 +57,7 @@ export const gameStory = [
       {
         character: '',
         sentence: '2022.06.06 오후 11시 30분.',
-        image: stage_0_0_0,
+        image: date_1,
       },
       {
         character: '',
@@ -119,7 +122,7 @@ export const gameStory = [
       {
         character: '',
         sentence: '2022.06.07 8:00 am',
-        image: black,
+        image: date_2,
       },
       {
         character: '진혁',
@@ -408,34 +411,34 @@ export const stageStory = [
         {
           character: '소현누나',
           sentence: '어머! 혹시 너 진혁이니?',
-          image: black,
+          image: stage_1_lovegame_1,
         },
         {
           character: '진람쥐',
           sentence:
             '녜 누나 ... 저 어떡하죠. 자고 일어나보니 다람쥐가 됐어요ㅠㅠ 이런 몸으로 방송을 할 수 있을까요? ㅠㅠ',
-          image: black,
+          image: stage_1_lovegame_1,
         },
         {
           character: '소현누나',
           sentence: '진람.. 아니 진혁아 괜찮아 다람쥐면 어때? 너라는 사실이 중요한거지',
-          image: black,
+          image: stage_1_lovegame_1,
         },
         {
           character: '진람쥐',
           sentence: '정말인가요ㅠㅠ 저 다람쥐여도 괜찮을까요? 팬들이 싫어하면 어쩌죠',
-          image: black,
+          image: stage_1_lovegame_1,
         },
         {
           character: '소현누나',
           sentence:
             '다람쥐인 지금도 충분히 귀엽고 사랑스러운걸! 오늘 찾아온 김에 같이 게스트로 이야기하다 갈래?',
-          image: black,
+          image: stage_1_lovegame_1,
         },
         {
           character: '진람쥐',
           sentence: '조금 부끄럽지만 ... 좋아요!',
-          image: black,
+          image: stage_1_lovegame_1,
         },
         {
           character: '',
