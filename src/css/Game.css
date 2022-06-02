@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .header-logo {
   text-align: center;
   color: azure;
@@ -65,6 +66,35 @@
 .text-area {
   /* font-family: 'Noto Sans KR', sans-serif; */
   font-family: 'DungGeunMo';
+}
+
+.result-share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  font-family: 'DungGeunMo';
+
+}
+
+.twitter-share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-place {
+  width: 9em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px dashed #afdd64;
+  text-align: center;
+}
+
+.share-btn {
+  width: 3em;
+  margin-top: 1em;
 }
 
 .footer {

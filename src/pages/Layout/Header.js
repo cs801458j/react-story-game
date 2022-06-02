@@ -1,5 +1,5 @@
 import { Layout } from 'antd';
-import headerImg from '../../images/logo_icon.PNG';
+import headerImg from '../../images/logo_icon.png';
 
 const Header = () => {
   const { Header } = Layout;
