@@ -22,7 +22,7 @@ const Ending = () => {
   });
 
   const twitterShare = () => {
-    let sendUrl = 'https://suddenly-squirrel.herokuapp.com/';
+    let sendUrl = 'https://suddenly-daramji.netlify.app/';
     let successMent = ' 진람쥐 구출 작전 대성공!';
     let hash = '진혁생축';
     window.open(
