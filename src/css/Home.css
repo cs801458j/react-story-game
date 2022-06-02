@@ -35,13 +35,13 @@
 }
 
 .header-img {
-  height: 2em;
-  width: 2em;
+  height: 3em;
+  width: 3em;
 }
 
 .ant-layout-header {
   background-color: #afdd64;
-
+  height: 5em;
 }
 
 .ant-card-body {

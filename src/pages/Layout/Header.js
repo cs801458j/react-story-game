@@ -1,5 +1,5 @@
 import { Layout } from 'antd';
-import headerImg from '../../images/header_test.png';
+import headerImg from '../../images/logo_icon.PNG';
 
 const Header = () => {
   const { Header } = Layout;
@@ -7,9 +7,7 @@ const Header = () => {
   return (
     <Header className="header">
       <div className="header-logo">
-        🍄🍄
         <img className="header-img" src={headerImg} alt={'진람쥐'} />
-        🍄🍄
       </div>
     </Header>
   );
