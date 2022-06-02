@@ -14,11 +14,11 @@
   font-family: 'Fredoka One', cursive;
   font-size: 1.8em;
 }
-
+/* 
 .header-img {
   height: 2em;
   width: 2em;
-}
+} */
 
 .storyline {
   /* font-family: 'Noto Sans KR', sans-serif; */
@@ -26,11 +26,11 @@
   margin: 0 auto;
   padding-top: 1em;
   width: 96%;
-  height: 11em;
+
+  height: 12em;
+  /* height: 10em; */
   /* background-color: #e0cfbc; #ccb69e; */
   font-size: 1.2em;
-  /* text-align: center; */
-
   display: flex;
   flex-direction: row;
 }
@@ -38,7 +38,8 @@
 
 
 .character-text {
-  height: 4.8em;
+  /* height: 4.8em; */
+  height: 6.8em;
 }
 
 .btn {
@@ -90,6 +91,14 @@
 
 .content-wrapper {
   height: 100%;
+}
+
+
+.character-name {
+  font-size: 1.2em;
+}
+.character-dialog {
+  font-size: 1.1em;
 }
 
 /*  게임 이미지 wrapper div */

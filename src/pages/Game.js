@@ -134,11 +134,12 @@ const Game = () => {
               </div>
 
               <div className="storyline">
-                <img src={Storyleft} style={{ height: '10em', float: 'left' }} alt="왼쪽바" />
+                <img src={Storyleft} style={{ height: '11em', float: 'left' }} alt="왼쪽바" />
                 <div className="story-text">
                   <div className="character-text">
-                    <div>{display.contents[dialogIndex].character}</div>
+                    <div className="character-name">{display.contents[dialogIndex].character}</div>
                     <Typewriter
+                      className="character-dialog"
                       options={{
                         strings: display.contents[dialogIndex].sentence,
                         autoStart: true,
@@ -153,14 +154,15 @@ const Game = () => {
                     </Button>
                   </div>
                 </div>
-                <img src={Storyright} style={{ height: '10em', float: 'right' }} alt="오른쪽바" />
+                <img src={Storyright} style={{ height: '11em', float: 'right' }} alt="오른쪽바" />
               </div>
             </div>
           )}
 
           {display && display.contents[dialogIndex].character === '선택' && gameSelection && (
             <div>
-              <div style={{ margin: '0 auto', textAlign: 'center' }}>
+              {/* <div style={{ margin: '0 auto', textAlign: 'center' }}> */}
+              <div className="game-image-wrapper">
                 <img
                   src={display.contents[dialogIndex].image}
                   style={{ width: '96%', textAlign: 'center' }}
