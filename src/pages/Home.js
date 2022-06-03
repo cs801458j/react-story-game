@@ -2,10 +2,10 @@ import { Layout, Menu, Breadcrumb, Button, Card, Col, Row, Carousel } from 'antd
 import { Link } from 'react-router-dom';
 import 'antd/dist/antd.min.css';
 import '../css/Home.css';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
 import styled from 'styled-components';
 import gameTitle from '../images/game_title.jpeg';
+import Header from '../components/Layout/header';
+import Footer from '../components/Layout/footer';
 
 // const { Header, Content, Footer } = Layout;
 const { Content } = Layout;
