@@ -18,15 +18,15 @@ const Ending = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 20000);
   });
 
   const twitterShare = () => {
     let sendUrl = 'https://suddenly-daramji.netlify.app/';
-    let successMent = ' 진람쥐 구출 작전 대성공!';
-    let hash = '진혁생축';
+    let successMessage = ' 진람쥐 구출 작전 대성공!';
+    let hashtag = '진혁생축';
     window.open(
-      `https://twitter.com/intent/tweet?text=${sendText}&text=${successMent}&hashtags=${hash}&url=${sendUrl}`,
+      `https://twitter.com/intent/tweet?text=${sendText}&text=${successMessage}&hashtags=${hashtag}&url=${sendUrl}`,
     );
   };
 
@@ -53,10 +53,15 @@ const Ending = () => {
           <p>게임을 하고 엔딩으로 오세용!</p>
         </div>
       )} */}
-      <div className="content-wrapper" style={{ height: '100%' }}>
+      <div className="content-wrapper" style={{ height: '100%', verticalAlign: 'middle' }}>
         {loading ? (
-          <Loading />
+          <div className="loading-spinner-wrapper">
+            <div className="loading-spinner">
+              <Loading />
+            </div>
+          </div>
         ) : (
+          // <SyncLoader color="#36D7B7" height={15} width={5} radius={2} margin={2} />
           <div>
             <div className="game-image-wrapper">
               <img
