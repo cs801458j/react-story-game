@@ -10,6 +10,7 @@ import Storyright from '../images/story_right.png';
 import '../css/Game.css';
 import 'antd/dist/antd.min.css';
 import selection from '../images/game/selection.JPG';
+import GameModal from './atoms/atom/GameModal';
 
 const Game = () => {
   const [display, setDisplay] = useState('');
@@ -186,7 +187,17 @@ const Game = () => {
               </div>
             </div>
           )}
-          <Modal
+          <GameModal
+            modalTitle={'MISSION FAIL ㅠ.ㅠ'}
+            modalVisible={isModalVisible}
+            handleCancel={handleCancel}
+            handleOk={handleOk}
+            f
+            modalOkText={'아니요'}
+            modalCancelText={'네'}
+            modalText={'GAME OVER ... 다시 플레이 하시겠습니까?'}
+          ></GameModal>
+          {/* <Modal
             title="MISSION FAIL ㅠ.ㅠ"
             visible={isModalVisible}
             onOk={handleCancel}
@@ -195,7 +206,7 @@ const Game = () => {
             cancelText="네"
           >
             <p>GAME OVER ... 다시 플레이 하시겠습니까?</p>
-          </Modal>
+          </Modal> */}
         </div>
         <Footer />
       </Layout>
