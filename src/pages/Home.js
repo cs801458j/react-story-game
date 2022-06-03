@@ -4,8 +4,8 @@ import 'antd/dist/antd.min.css';
 import '../css/Home.css';
 import styled from 'styled-components';
 import gameTitle from '../images/game_title.jpeg';
-import Header from '../components/Layout/header';
-import Footer from '../components/Layout/footer';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
 
 // const { Header, Content, Footer } = Layout;
 const { Content } = Layout;

@@ -8,9 +8,9 @@ import Storyleft from '../images/story_left.png';
 import Storyright from '../images/story_right.png';
 import '../css/Game.css';
 import 'antd/dist/antd.min.css';
-import Header from '../components/Layout/header';
-import Footer from '../components/Layout/footer';
-import GameModal from '../components/atoms/atom/gameModal';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+import GameModal from './atom/GameModal';
 import selection from '../images/game/selection.JPG';
 
 const Game = () => {

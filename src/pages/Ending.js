@@ -5,9 +5,10 @@ import '../css/Game.css';
 import Twittericon from '../images/icon-twitter.png';
 import { useLocation } from 'react-router-dom';
 import gameTitle from '../images/game_title.jpeg';
-import Header from '../components/Layout/header';
-import Footer from '../components/Layout/footer';
-import Loading from '../components/Layout/loading';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+import Loading from './Layout/Loading';
+
 const Ending = () => {
   const [sendText, setSendText] = useState(''); //공유할 텍스트
   const [loading, setLoading] = useState(true);
