@@ -1,13 +1,13 @@
 import { React, useEffect, useState } from 'react';
-import Header from './Layout/Header';
-import Footer from './Layout/Footer';
 import { Button, Layout } from 'antd';
 import 'antd/dist/antd.min.css';
 import '../css/Game.css';
 import Twittericon from '../images/icon-twitter.png';
-import Loading from './Layout/Loading';
 import { useLocation } from 'react-router-dom';
 import gameTitle from '../images/game_title.jpeg';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+import Loading from './Layout/Loading';
 
 const Ending = () => {
   const [sendText, setSendText] = useState(''); //공유할 텍스트
@@ -61,7 +61,6 @@ const Ending = () => {
             </div>
           </div>
         ) : (
-          // <SyncLoader color="#36D7B7" height={15} width={5} radius={2} margin={2} />
           <div>
             <div className="game-image-wrapper">
               <img

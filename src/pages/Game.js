@@ -8,10 +8,10 @@ import Storyleft from '../images/story_left.png';
 import Storyright from '../images/story_right.png';
 import '../css/Game.css';
 import 'antd/dist/antd.min.css';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+import GameModal from './atom/GameModal';
 import selection from '../images/game/selection.JPG';
-import GameModal from '../components/atoms/atom/GameModal';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
 
 const Game = () => {
   const [display, setDisplay] = useState('');
