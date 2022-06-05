@@ -138,7 +138,7 @@ const Game = () => {
               </div>
 
               <div className="storyline">
-                <img src={Storyleft} style={{ height: '11em', float: 'left' }} alt="왼쪽바" />
+                <img className="story-left-bar" src={Storyleft} alt="왼쪽바" />
                 <div className="story-text">
                   <div className="character-text">
                     <div className="character-name">{display.contents[dialogIndex].character}</div>
@@ -153,13 +153,13 @@ const Game = () => {
                       />
                     </div>
                   </div>
-                  <div className="btn">
+                  <div className="next-btn">
                     <Button onClick={goToNextMessage} style={{ textAlign: 'center' }}>
-                      다음
+                      ▶︎
                     </Button>
                   </div>
                 </div>
-                <img src={Storyright} style={{ height: '11em', float: 'right' }} alt="오른쪽바" />
+                <img className="story-right-bar" src={Storyright} alt="오른쪽바" />
               </div>
             </div>
           )}
