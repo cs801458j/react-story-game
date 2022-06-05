@@ -163,6 +163,22 @@
   padding-top: 1em;
 }
 
+/*  게임 이미지 wrapper div */
+.loading-spinner-wrapper {
+  /* margin: 0 auto; */
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 1em;
+  height: 15em;
+}
+.loading-spinner {
+  /* margin: 0 auto; */
+
+  vertical-align: middle;
+
+}
+
 /*  웹으로 플레이 했을 때*/
 .game-image{
   width: 54%;

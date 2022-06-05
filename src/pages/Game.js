@@ -3,12 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { Button, Input, Layout, Radio, Space, Modal } from 'antd';
 import { gameStory, gameSelection, stageStory } from '../data/Story';
 import Typewriter from 'typewriter-effect';
-import Header from './Layout/Header';
-import Footer from './Layout/Footer';
+
 import Storyleft from '../images/story_left.png';
 import Storyright from '../images/story_right.png';
 import '../css/Game.css';
 import 'antd/dist/antd.min.css';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+import GameModal from './atom/GameModal';
 import selection from '../images/game/selection.JPG';
 
 const Game = () => {
@@ -186,7 +188,17 @@ const Game = () => {
               </div>
             </div>
           )}
-          <Modal
+          <GameModal
+            modalTitle={'MISSION FAIL ㅠ.ㅠ'}
+            modalVisible={isModalVisible}
+            handleCancel={handleCancel}
+            handleOk={handleOk}
+            f
+            modalOkText={'아니요'}
+            modalCancelText={'네'}
+            modalText={'GAME OVER ... 다시 플레이 하시겠습니까?'}
+          ></GameModal>
+          {/* <Modal
             title="MISSION FAIL ㅠ.ㅠ"
             visible={isModalVisible}
             onOk={handleCancel}
@@ -195,7 +207,7 @@ const Game = () => {
             cancelText="네"
           >
             <p>GAME OVER ... 다시 플레이 하시겠습니까?</p>
-          </Modal>
+          </Modal> */}
         </div>
         <Footer />
       </Layout>

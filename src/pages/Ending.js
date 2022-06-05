@@ -1,13 +1,13 @@
 import { React, useEffect, useState } from 'react';
-import Header from './Layout/Header';
-import Footer from './Layout/Footer';
 import { Button, Layout } from 'antd';
 import 'antd/dist/antd.min.css';
 import '../css/Game.css';
 import Twittericon from '../images/icon-twitter.png';
-import Loading from './Layout/Loading';
 import { useLocation } from 'react-router-dom';
 import gameTitle from '../images/game_title.jpeg';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+import Loading from './Layout/Loading';
 
 const Ending = () => {
   const [sendText, setSendText] = useState(''); //공유할 텍스트
@@ -18,7 +18,7 @@ const Ending = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 20000);
   });
 
   const twitterShare = () => {
@@ -58,9 +58,13 @@ const Ending = () => {
           <p>게임을 하고 엔딩으로 오세용!</p>
         </div>
       )} */}
-      <div className="content-wrapper" style={{ height: '100%' }}>
+      <div className="content-wrapper" style={{ height: '100%', verticalAlign: 'middle' }}>
         {loading ? (
-          <Loading />
+          <div className="loading-spinner-wrapper">
+            <div className="loading-spinner">
+              <Loading />
+            </div>
+          </div>
         ) : (
           <div>
             <div className="game-image-wrapper">
