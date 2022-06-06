@@ -6,7 +6,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'PFStardust';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .header-logo {
   text-align: center;
   color: azure;
@@ -20,6 +25,14 @@
   height: 2em;
   width: 2em;
 } */
+
+.start-text {
+  font-size: 1.4em;
+  font-family: 'PFStardust';
+  color: #6c6357;
+  text-shadow: 0.05em 0.05em 0 #e9c242;
+  text-align: center;
+}
 
 .storyline {
   /* font-family: 'Noto Sans KR', sans-serif; */

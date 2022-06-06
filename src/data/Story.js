@@ -1,4 +1,3 @@
-import stage_0_0_0 from '../images/game/stage_0_0_0.jpeg';
 import stage_0_0_1 from '../images/game/stage_0_0_1.jpeg';
 import stage_0_1_0 from '../images/game/stage_0_1_0.jpeg';
 import stage_0_1_1 from '../images/game/stage_0_1.JPG';
@@ -70,7 +69,7 @@ import stage_2_health_0_4 from '../images/game/stage_2_health_0_4.jpeg';
 import stage_2_health_0_5 from '../images/game/stage_2_health_0_5.jpeg';
 import stage_2_health_0_6 from '../images/game/stage_2_health_0_6.jpeg';
 import stage_2_health_0_7 from '../images/game/stage_2_health_0_7.jpeg';
-import stage_2_health_1 from '../images/game/stage_2_health_1.JPG';
+// import stage_2_health_1 from '../images/game/stage_2_health_1.JPG';
 import stage_2_health_2 from '../images/game/stage_2_health_2.JPG';
 import stage_2_chkmate_1 from '../images/game/stage_2_chkmate_1.JPG';
 import stage_2_chkmate_2 from '../images/game/stage_2_chkmate_2.jpeg';
