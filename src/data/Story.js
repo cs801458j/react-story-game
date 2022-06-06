@@ -69,8 +69,9 @@ import stage_2_health_0_7 from '../images/game/stage_2_health_0_7.jpeg';
 import stage_2_health_1 from '../images/game/stage_2_health_1.JPG';
 import stage_2_health_2 from '../images/game/stage_2_health_2.JPG';
 import stage_2_chkmate_1 from '../images/game/stage_2_chkmate_1.JPG';
-import stage_2_chkmate_2 from '../images/game/stage_2_chkmate_2.JPG';
+import stage_2_chkmate_2 from '../images/game/stage_2_chkmate_2.jpeg';
 import stage_2_chkmate_3 from '../images/game/stage_2_chkmate_3.JPG';
+import stage_2_chkmate_4 from '../images/game/stage_2_chkmate_4.JPG';
 import stage_2_topmedia_1 from '../images/game/stage_2_topmedia_1.JPG';
 import stage_2_topmedia_2 from '../images/game/stage_2_topmedia_2.JPG';
 import stage_2_topmedia_3 from '../images/game/stage_2_topmedia_3.JPG';
@@ -574,7 +575,7 @@ export const stageStory = [
         {
           character: '버섯요정',
           sentence:
-            '아무튼 이 버섯을 먹으면서 네가 가고 싶은 곳을 마음속 깊이 생각하면 그곳으로 이동할 수 있어!',
+            '아무튼 이 버섯을 먹으면서 네가 가고 싶은 곳을 마음 속 깊이 생각하면 그곳으로 이동할 수 있어!',
           image: stage_2_talk_8,
         },
       ],
@@ -653,7 +654,7 @@ export const stageStory = [
         {
           character: '',
           sentence: '진람쥐는 버섯을 꾹 삼켰다.',
-          image: black,
+          image: stage_2_eat_mushroom,
         },
         {
           character: '',
@@ -722,7 +723,7 @@ export const stageStory = [
         {
           character: '',
           sentence: '진람쥐는 버섯을 꾹 삼켰다.',
-          image: black,
+          image: stage_2_eat_mushroom,
         },
         {
           character: '진람쥐',
@@ -742,44 +743,44 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence: '그런가? 정말 내 목소리만 그대로면 될까?',
-          image: stage_2_chkmate_1,
+          image: stage_2_chkmate_2,
         },
         {
           character: '체크메이트',
           sentence: '당연하지. 아니 오히려 귀여운 거 같기도? 그러니까 일단 녹음하자.',
-          image: stage_2_chkmate_1,
+          image: stage_2_chkmate_2,
         },
         {
           character: '',
           sentence:
             '그렇게 5집 수록곡 녹음을 하게 된 진람쥐. 마이크 높이는 낮아졌지만 실력은 여전했다.',
-          image: stage_2_chkmate_2,
+          image: stage_2_chkmate_3,
         },
         {
           character: '',
           sentence: '진람쥐는 최상의 컨디션으로 수록곡 녹음을 마쳤다.',
-          image: stage_2_chkmate_2,
+          image: stage_2_chkmate_3,
         },
         {
           character: '',
           sentence: 'MISSION SUCCESS',
-          image: stage_2_chkmate_2,
+          image: stage_2_chkmate_3,
         },
         {
           character: '체크메이트',
           sentence: '축하해. 미션을 통과했구나.',
-          image: stage_2_chkmate_3,
+          image: stage_2_chkmate_4,
         },
         {
           character: '체크메이트',
           sentence:
             '너는 다람쥐로 변해도 본업에 충실한 모습 덕분에 능력의 버섯을 받을 자격이 있어.',
-          image: stage_2_chkmate_3,
+          image: stage_2_chkmate_4,
         },
         {
           character: '획득',
           sentence: "진람쥐는 '능력의 버섯'을(를) 획득했다 !",
-          image: stage_2_chkmate_3,
+          image: stage_2_chkmate_4,
         },
         {
           character: '버섯요정',
@@ -833,7 +834,7 @@ export const stageStory = [
         {
           character: '',
           sentence: '진람쥐는 버섯을 꾹 삼켰다.',
-          image: black,
+          image: stage_2_eat_mushroom,
         },
         {
           character: '',
