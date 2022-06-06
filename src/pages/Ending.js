@@ -23,14 +23,16 @@ const Ending = () => {
 
   const twitterShare = () => {
     let sendUrl = 'https://suddenly-daramji.netlify.app/';
-    let successMessage = '진람쥐 구출 작전 대성공!';
+    let successMessage = sendText + ', 진람쥐 구출 작전 대성공!';
     let hashtag = '어느날_눈떠보니_내가_다람쥐';
+
+    console.log(sendText);
 
     if (sendText === '') {
       alert('닉네임 입력해 조!');
     } else {
       window.open(
-        `https://twitter.com/intent/tweet?text=${sendText}&text=${successMessage}&hashtags=${hashtag}&url=${sendUrl}`,
+        `https://twitter.com/intent/tweet?text=${successMessage}&hashtags=${hashtag}&url=${sendUrl}`,
       );
     }
   };
