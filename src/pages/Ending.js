@@ -25,7 +25,7 @@ const Ending = () => {
   const twitterShare = () => {
     let sendUrl = 'https://suddenly-daramji.netlify.app/';
     let successMessage = '🐿 ' + sendText + ', 진람쥐 구출 작전 대성공!🍄💙';
-    let hashtag = '어느날_눈떠보니_내가_다람쥐';
+    let hashtag = '어느날_눈떠보니_다람쥐가_되었다';
 
     if (sendText === '') {
       alert('닉네임 입력해 조!');
