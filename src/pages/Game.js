@@ -168,9 +168,31 @@ const Game = () => {
             <div>
               {/* <div style={{ margin: '0 auto', textAlign: 'center' }}> */}
               <div className="game-image-wrapper">
-                <img src={selection} style={{ width: '96%', textAlign: 'center' }} alt="게임화면" />
+                <img className="game-image" src={selection} alt="게임화면" />
               </div>
-              <div className="select-box">
+              <div className="storyline">
+                <img className="story-left-bar" src={Storyleft} alt="왼쪽바" />
+                <div className="story-text">
+                  <Radio.Group
+                    style={{ fontSize: '0.8em' }}
+                    onChange={onChangeSelect}
+                    value={select}
+                  >
+                    <Space direction="vertical">
+                      <Radio value={0}>{selections[stageId - 1].selections[0]}</Radio>
+                      <Radio value={1}>{selections[stageId - 1].selections[1]}</Radio>
+                      <Radio value={2}>{selections[stageId - 1].selections[2]}</Radio>
+                    </Space>
+                  </Radio.Group>
+                  <div className="select-btn">
+                    <Button onClick={selectAnswer} style={{ textAlign: 'center' }}>
+                      선택
+                    </Button>
+                  </div>
+                </div>
+                <img className="story-right-bar" src={Storyright} alt="오른쪽바" />
+              </div>
+              {/* <div className="select-box">
                 <div>
                   <Radio.Group onChange={onChangeSelect} value={select}>
                     <Space direction="vertical">
@@ -185,7 +207,7 @@ const Game = () => {
                     선택
                   </Button>
                 </div>
-              </div>
+              </div> */}
             </div>
           )}
           <GameModal
