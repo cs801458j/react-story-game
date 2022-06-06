@@ -30,7 +30,7 @@ import black from '../images/game/black.jpeg';
 // import selection from '../images/game/selection.jpeg';
 import date_1 from '../images/game/date_1.JPG';
 import date_2 from '../images/game/date_2.JPG';
-import selection from '../images/game/selection.JPG';
+import selection from '../images/game/selection.jpeg';
 //  stage 1
 import stage_1_1 from '../images/game/stage_1_1.jpeg';
 import stage_1_rampung_0 from '../images/game/stage_1_rampung_0.jpeg';
@@ -47,9 +47,11 @@ import stage_1_lovegame_7 from '../images/game/stage_1_lovegame_2.JPG';
 import stage_1_lovegame_sbs from '../images/game/stage_1_lovegame_sbs.jpeg';
 import stage_1_staff_1 from '../images/game/stage_1_staff_1.jpeg';
 import stage_1_staff_2 from '../images/game/stage_1_staff_2.jpeg';
+import stage_1_kbs from '../images/game/stage_1_kbs.jpeg';
 //  stage 2
 
 import stage_2_talk_0 from '../images/game/stage_2_talk_0.jpeg';
+import stage_2_talk_0_0 from '../images/game/stage_2_talk_0.jpeg';
 import stage_2_talk_1 from '../images/game/stage_2_talk_1.jpeg';
 import stage_2_talk_2 from '../images/game/stage_2_talk_2.jpeg';
 import stage_2_talk_3 from '../images/game/stage_2_talk_3.jpeg';
@@ -111,7 +113,7 @@ import stage_3_end_8 from '../images/game/stage_3_end_8.jpeg';
 
 // stage title
 import stage_1 from '../images/game/stage_1.jpeg';
-import stage_2 from '../images/game/stage_3.jpeg';
+import stage_2 from '../images/game/stage_2.jpeg';
 import stage_3 from '../images/game/stage_3.jpeg';
 
 // 메인 게임 스토리 라인
@@ -404,12 +406,12 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence: '그래. 미선느나를 만나러 주접이풍년으로 가자!',
-          image: black,
+          image: stage_1_kbs,
         },
         {
           character: '',
           sentence: '그렇게 주접이풍년 촬영장으로 찾아간 진람쥐.',
-          image: black,
+          image: stage_1_kbs,
         },
         {
           character: '진람쥐',
@@ -802,7 +804,7 @@ export const stageStory = [
         {
           character: '버섯요정',
           sentence: '축하해. 능력의 버섯을 획득했구나. ',
-          image: stage_2_talk_0,
+          image: stage_2_talk_0_0,
         },
         {
           character: '버섯요정',
