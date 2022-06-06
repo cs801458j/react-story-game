@@ -43,7 +43,7 @@ const Ending = () => {
   return (
     <Layout style={{ height: '100%', backgroundColor: 'white' }}>
       <Header />
-      {result === 'success' ? (
+      {/* {result === 'success' ? (
         <div className="content-wrapper" style={{ height: '100%' }}>
           {loading ? (
             <Loading />
@@ -99,8 +99,8 @@ const Ending = () => {
           </div>
           <p className="start-text">게임을 하고 엔딩으로 오세용!</p>
         </div>
-      )}
-      {/* <div className="content-wrapper" style={{ height: '100%', verticalAlign: 'middle' }}>
+      )} */}
+      <div className="content-wrapper" style={{ height: '100%', verticalAlign: 'middle' }}>
         {loading ? (
           <div className="loading-spinner-wrapper">
             <div className="loading-spinner">
@@ -141,7 +141,7 @@ const Ending = () => {
             </div>
           </div>
         )}
-      </div> */}
+      </div>
       <Footer />
     </Layout>
   );
