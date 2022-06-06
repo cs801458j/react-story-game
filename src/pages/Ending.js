@@ -4,7 +4,7 @@ import 'antd/dist/antd.min.css';
 import '../css/Game.css';
 import Twittericon from '../images/icon-twitter.png';
 import { useLocation } from 'react-router-dom';
-import gameTitle from '../images/game_title.jpeg';
+import gameTitle from '../images/game_real_ending.jpeg';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
 import Loading from './Layout/Loading';
@@ -18,13 +18,13 @@ const Ending = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 20000);
+    }, 2000);
   });
 
   const twitterShare = () => {
     let sendUrl = 'https://suddenly-daramji.netlify.app/';
-    let successMessage = ' 진람쥐 구출 작전 대성공!';
-    let hashtag = '진혁생축';
+    let successMessage = '진람쥐 구출 작전 대성공!';
+    let hashtag = '어느날_눈떠보니_내가_다람쥐';
 
     if (sendText === '') {
       alert('닉네임 입력해 조!');
