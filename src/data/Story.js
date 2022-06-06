@@ -37,6 +37,7 @@ import stage_1_1 from '../images/game/stage_1_1.jpeg';
 import stage_1_rampung_0 from '../images/game/stage_1_rampung_0.jpeg';
 import stage_1_rampung_1 from '../images/game/stage_1_rampung_1.jpeg';
 import stage_1_reporter_1 from '../images/game/stage_1_reporter_1.jpeg';
+import stage_1_reporter_2 from '../images/game/stage_1_reporter_2.jpeg';
 import stage_1_lovegame_1 from '../images/game/stage_1_lovegame_1.jpeg';
 import stage_1_lovegame_2 from '../images/game/stage_1_lovegame_2.jpeg';
 import stage_1_lovegame_3 from '../images/game/stage_1_lovegame_3.jpeg';
@@ -207,7 +208,7 @@ export const gameStory = [
         character: '',
         sentence:
           '침대 옆 책상머리맡에 둔 안경이 이렇게 멀었나 생각하며 안경을 쓴 진혁. 손을 보고 화들짝 놀라며 거울을 들었다.',
-        image: black,
+        image: stage_0_bed,
       },
       {
         character: '',
@@ -448,12 +449,12 @@ export const stageStory = [
         {
           character: '',
           sentence: '다람쥐 리포터는 특유의 귀여움으로 소소하게 화제가 되었다.',
-          image: stage_1_reporter_1,
+          image: stage_1_reporter_2,
         },
         {
           character: '',
           sentence: '하지만 미선느나를 만나지 못해 결국 조언을 얻지 못했다.',
-          image: stage_1_reporter_1,
+          image: stage_1_reporter_2,
         },
       ],
     },
