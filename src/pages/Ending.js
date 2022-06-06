@@ -113,7 +113,7 @@ const Ending = () => {
             <div className="game-image-wrapper">
               <img
                 className="game-image"
-                src={gameTitle}
+                src={gameEnding}
                 style={{ textAlign: 'center' }}
                 alt="게임화면"
               />
