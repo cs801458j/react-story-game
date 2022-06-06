@@ -25,6 +25,7 @@ import stage_0_17 from '../images/game/stage_0_17.jpeg'; //  악마버섯
 import stage_0_18 from '../images/game/stage_0_18.jpeg';
 import stage_0_19 from '../images/game/stage_0_19.jpeg';
 import stage_0_20 from '../images/game/stage_0_20.jpeg';
+import stage_0_bed from '../images/game/stage_0_bed.jpeg';
 
 import black from '../images/game/black.jpeg';
 // import selection from '../images/game/selection.jpeg';
