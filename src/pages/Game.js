@@ -84,7 +84,7 @@ const Game = () => {
 
     //  미션 성공 & 마지막 최종 엔딩
     if (stageStory[stageId - 1][select].result === 'success' && stageId === 3) {
-      navigate('/ending');
+      navigate('/ending', { result: 'success' });
     }
 
     setDisplay(gameStory[stageId + 1]);
