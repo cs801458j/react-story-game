@@ -150,10 +150,10 @@
 
 
 .character-name {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .character-dialog {
-  font-size: 1.0em;
+  font-size: 0.88em;
 }
 
 /*  게임 이미지 wrapper div */
@@ -190,18 +190,25 @@
   border: 7px solid #3b3b3b;
 }
 
+.story-text {
+  width: 100%;
+  padding: 1em;
+  background-color: #e0e0e0;
+  border: 7px solid #3b3b3b;
+}
+
 
 /*  태블릿으로 플레이 했을 때*/
 @media all and (max-width: 1024px) {
   .game-image{
-    width: 90%;
+    width: 58%;
   }
 }
 
 /*  소형태블릿 & 모바일로 플레이 했을 때*/
 @media all and (max-width: 768px) {
   .game-image{
-    width: 96%;
+    width: 90%;
   }
 
   .game-image-wrapper {
@@ -219,4 +226,9 @@
   .story-text {
     height: 12em;
   }
+}
+
+
+.ant-radio-wrapper {
+  font-size: 0.9em;
 }

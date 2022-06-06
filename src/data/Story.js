@@ -1,6 +1,11 @@
 import stage_0_0_0 from '../images/game/stage_0_0_0.jpeg';
 import stage_0_0_1 from '../images/game/stage_0_0_1.jpeg';
-import stage_0_1 from '../images/game/stage_0_1.JPG';
+import stage_0_1_0 from '../images/game/stage_0_1_0.jpeg';
+import stage_0_1_1 from '../images/game/stage_0_1.JPG';
+import stage_0_1_2 from '../images/game/stage_0_1_2.jpeg';
+import stage_0_1_3 from '../images/game/stage_0_1_3.jpeg';
+import stage_0_1_4 from '../images/game/stage_0_1_4.jpeg';
+import stage_0_1_5 from '../images/game/stage_0_1_5.jpeg';
 import stage_0_2 from '../images/game/stage_0_2.JPG';
 import stage_0_3 from '../images/game/stage_0_3.JPG';
 import stage_0_4 from '../images/game/stage_0_4.jpeg';
@@ -11,6 +16,16 @@ import stage_0_8 from '../images/game/stage_0_8.jpeg';
 import stage_0_9 from '../images/game/stage_0_9.jpeg';
 import stage_0_10 from '../images/game/stage_0_10.jpeg';
 import stage_0_11 from '../images/game/stage_0_11.jpeg';
+import stage_0_12 from '../images/game/stage_0_12.jpeg';
+import stage_0_13 from '../images/game/stage_0_13.jpeg';
+import stage_0_14 from '../images/game/stage_0_14.jpeg';
+import stage_0_15 from '../images/game/stage_0_15.jpeg';
+import stage_0_16 from '../images/game/stage_0_16.jpeg';
+import stage_0_17 from '../images/game/stage_0_17.jpeg'; //  악마버섯
+import stage_0_18 from '../images/game/stage_0_18.jpeg';
+import stage_0_19 from '../images/game/stage_0_19.jpeg';
+import stage_0_20 from '../images/game/stage_0_20.jpeg';
+
 import black from '../images/game/black.jpeg';
 // import selection from '../images/game/selection.jpeg';
 import date_1 from '../images/game/date_1.JPG';
@@ -18,12 +33,39 @@ import date_2 from '../images/game/date_2.JPG';
 import selection from '../images/game/selection.JPG';
 //  stage 1
 import stage_1_1 from '../images/game/stage_1_1.jpeg';
+import stage_1_rampung_0 from '../images/game/stage_1_rampung_0.jpeg';
 import stage_1_rampung_1 from '../images/game/stage_1_rampung_1.jpeg';
 import stage_1_reporter_1 from '../images/game/stage_1_reporter_1.jpeg';
-import stage_1_lovegame_1 from '../images/game/stage_1_lovegame_1.JPG';
-import stage_1_lovegame_2 from '../images/game/stage_1_lovegame_2.JPG';
+import stage_1_lovegame_1 from '../images/game/stage_1_lovegame_1.jpeg';
+import stage_1_lovegame_2 from '../images/game/stage_1_lovegame_2.jpeg';
+import stage_1_lovegame_3 from '../images/game/stage_1_lovegame_3.jpeg';
+import stage_1_lovegame_4 from '../images/game/stage_1_lovegame_4.jpeg';
+import stage_1_lovegame_5 from '../images/game/stage_1_lovegame_1.JPG';
 
+import stage_1_lovegame_6 from '../images/game/stage_1_lovegame_7.jpeg';
+import stage_1_lovegame_7 from '../images/game/stage_1_lovegame_2.JPG';
+import stage_1_lovegame_sbs from '../images/game/stage_1_lovegame_sbs.jpeg';
+import stage_1_staff_1 from '../images/game/stage_1_staff_1.jpeg';
+import stage_1_staff_2 from '../images/game/stage_1_staff_2.jpeg';
 //  stage 2
+
+import stage_2_talk_0 from '../images/game/stage_2_talk_0.jpeg';
+import stage_2_talk_1 from '../images/game/stage_2_talk_1.jpeg';
+import stage_2_talk_2 from '../images/game/stage_2_talk_2.jpeg';
+import stage_2_talk_3 from '../images/game/stage_2_talk_3.jpeg';
+import stage_2_talk_4 from '../images/game/stage_2_talk_4.jpeg';
+import stage_2_talk_5 from '../images/game/stage_2_talk_5.jpeg';
+import stage_2_talk_6 from '../images/game/stage_2_talk_6.jpeg';
+import stage_2_talk_7 from '../images/game/stage_2_talk_7.jpeg';
+import stage_2_talk_8 from '../images/game/stage_2_talk_8.jpeg';
+// 본 스토리
+import stage_2_health_0_0 from '../images/game/stage_2_health_0_0.jpeg';
+import stage_2_health_0_1 from '../images/game/stage_2_health_0_1.jpeg';
+import stage_2_health_0_3 from '../images/game/stage_2_health_0_3.jpeg';
+import stage_2_health_0_4 from '../images/game/stage_2_health_0_4.jpeg';
+import stage_2_health_0_5 from '../images/game/stage_2_health_0_5.jpeg';
+import stage_2_health_0_6 from '../images/game/stage_2_health_0_6.jpeg';
+import stage_2_health_0_7 from '../images/game/stage_2_health_0_7.jpeg';
 import stage_2_health_1 from '../images/game/stage_2_health_1.JPG';
 import stage_2_health_2 from '../images/game/stage_2_health_2.JPG';
 import stage_2_chkmate_1 from '../images/game/stage_2_chkmate_1.JPG';
@@ -33,6 +75,7 @@ import stage_2_topmedia_1 from '../images/game/stage_2_topmedia_1.JPG';
 import stage_2_topmedia_2 from '../images/game/stage_2_topmedia_2.JPG';
 import stage_2_topmedia_3 from '../images/game/stage_2_topmedia_3.JPG';
 import stage_2_topmedia_4 from '../images/game/stage_2_topmedia_4.JPG';
+import stage_2_eat_mushroom from '../images/game/stage_2_eat_mushroom.jpeg';
 
 //  stage 3
 import stage_3_vlive_1 from '../images/game/stage_3_vlive_1.JPG';
@@ -47,6 +90,11 @@ import stage_3_bubble_2 from '../images/game/stage_3_bubble_2.JPG';
 import stage_3_bubble_3 from '../images/game/stage_3_bubble_3.JPG';
 import stage_3_bubble_4 from '../images/game/stage_3_bubble_4.JPG';
 import stage_3_bubble_5 from '../images/game/stage_3_bubble_5.JPG';
+
+// stage title
+import stage_1 from '../images/game/stage_1.jpeg';
+import stage_2 from '../images/game/stage_3.jpeg';
+import stage_3 from '../images/game/stage_3.jpeg';
 
 // 메인 게임 스토리 라인
 export const gameStory = [
@@ -67,47 +115,47 @@ export const gameStory = [
       {
         character: '',
         sentence: '냄새를 따라가 보니 그곳엔... 어머니께서 라면을 드시고 계시는 것이었다.',
-        image: stage_0_1,
+        image: stage_0_1_0,
       },
       {
         character: '진혁',
         sentence: '엄마 지금 라면드셔요?',
-        image: stage_0_1,
+        image: stage_0_1_1,
       },
       {
         character: '엄마',
         sentence: 'ㅇ',
-        image: stage_0_1,
+        image: stage_0_1_1,
       },
       {
         character: '진혁',
         sentence: '냄새 엄청나서 잠 깼어. 배고파서.',
-        image: stage_0_1,
+        image: stage_0_1_2,
       },
       {
         character: '엄마',
         sentence: '넌 왜그렇게 코가발달됬냐',
-        image: stage_0_1,
+        image: stage_0_1_3,
       },
       {
         character: '진혁',
         sentence: '어쩌지... 나 지금 밀가루 안 먹는데...',
-        image: stage_0_1,
+        image: stage_0_1_3,
       },
       {
         character: '엄마',
         sentence: '괜찮아. 버섯 라면은 밀가루 아니고 버섯 99.9% 야.',
-        image: stage_0_1,
+        image: stage_0_1_4,
       },
       {
         character: '진혁',
         sentence: '진짜요? 그럼 그냥 먹고 잘까.',
-        image: stage_0_1,
+        image: stage_0_1_4,
       },
       {
         character: '엄마',
         sentence: '그래. 이건 어차피 살도 안쪄.',
-        image: stage_0_1,
+        image: stage_0_1_5,
       },
       {
         character: '',
@@ -178,62 +226,63 @@ export const gameStory = [
       {
         character: '????',
         sentence: '왔구나.',
-        image: stage_0_9,
-      },
-      {
-        character: '진혁',
-        sentence: '넌 누구야?',
-        image: stage_0_9,
-      },
-      {
-        character: '버섯요정',
-        sentence: '난 버섯라면의 저주에 걸린 사람들만 만날 수 있다는 버섯요정이야.',
-        image: stage_0_9,
-      },
-      {
-        character: '진혁',
-        sentence: '? 지금 니 말은 내가 저주에 걸렸다고?',
-        image: stage_0_9,
-      },
-      {
-        character: '버섯요정',
-        sentence: 'ㅇㅇ 넌 어젯밤에 버섯라면을 두 봉지나 끓여 먹었기 때문에 버섯의 저주에 걸렸어.',
         image: stage_0_10,
       },
       {
         character: '진혁',
-        sentence: '아니 왜?? 내가 배고파서 먹을 수도 있지 ㅡㅡ 거 참 쪼잔하넹',
+        sentence: '넌 누구야?',
         image: stage_0_11,
+      },
+      {
+        character: '버섯요정',
+        sentence: '난 버섯라면의 저주에 걸린 사람들만 만날 수 있다는 버섯요정이야.',
+        image: stage_0_13,
+      },
+      {
+        character: '진혁',
+        sentence: '? 지금 니 말은 내가 저주에 걸렸다고?',
+        image: stage_0_14,
+      },
+      {
+        character: '버섯요정',
+        sentence:
+          'ㅇㅇ 넌 어젯밤에 버섯라면을 두 봉지나 끓여 먹었기 때문에 악마버섯의 저주에 걸렸어.',
+        image: stage_0_15,
+      },
+      {
+        character: '진혁',
+        sentence: '아니 왜?? 내가 배고파서 먹을 수도 있지 ㅡㅡ 거 참 쪼잔하넹',
+        image: stage_0_15,
       },
       {
         character: '버섯요정',
         sentence: '맞아 그럴 수도 있지... 하지만 넌 엄마의 탈을 쓴 악마버섯 시험에 넘어간 거야!',
-        image: stage_0_11,
+        image: stage_0_12,
       },
       {
         character: '진혁',
         sentence: '어젯밤... 나랑 얘기 한 사람이 엄마가 아니고 악마버섯이었다구?!',
-        image: stage_0_11,
+        image: stage_0_17,
       },
       {
         character: '버섯요정',
         sentence: '그래. 드디어 상황 파악이 됐구나?',
-        image: stage_0_11,
+        image: stage_0_16,
       },
       {
         character: '진혁',
         sentence: '그러면 내가... 사람으로 돌아가려면 어떻게 해야 하니 버섯요정아ㅠㅠ',
-        image: stage_0_11,
+        image: stage_0_18,
       },
       {
         character: '버섯요정',
         sentence: '지금부터 세 가지 미션을 통과하면 널 다시 사람으로 돌려줄게.',
-        image: stage_0_11,
+        image: stage_0_19,
       },
       {
         character: '진혁',
         sentence: '좋아. 그 미션 완벽하게 클리어 하겠어!',
-        image: stage_0_11,
+        image: stage_0_20,
       },
     ],
   },
@@ -244,12 +293,12 @@ export const gameStory = [
       {
         character: 'STAGE 1',
         sentence: '그래! 일단 친한 누나를 만나서 상황을 어떻게 해결해야 할지 물어보자.',
-        image: black,
+        image: stage_1,
       },
       {
         character: '',
         sentence: '근데 어떤 누나한테 가지?',
-        image: black,
+        image: stage_1,
       },
       {
         character: '선택',
@@ -265,12 +314,12 @@ export const gameStory = [
       {
         character: 'STAGE 2',
         sentence: '좋아. 그러면 버섯을 먹고 어디로 갈지 생각하면 되는 거지?',
-        image: black,
+        image: stage_2,
       },
       {
         character: '',
         sentence: '근데 어디로 가지?',
-        image: black,
+        image: stage_2,
       },
       {
         character: '선택',
@@ -286,12 +335,12 @@ export const gameStory = [
       {
         character: 'STAGE 3',
         sentence: '그래 ... 숨기고만 있을 순 없으니까 빨리 말하자.',
-        image: black,
+        image: stage_3,
       },
       {
         character: '',
         sentence: '근데 어디에서 말해주지? ㅠㅠ',
-        image: black,
+        image: stage_3,
       },
       {
         character: '선택',
@@ -347,12 +396,12 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence: '안녕하세요~ 혹시 미선느나 지금 어디에 계세요?',
-          image: stage_1_1,
+          image: stage_1_staff_1,
         },
         {
           character: '스탭',
           sentence: '여 마침 잘 왔다.',
-          image: stage_1_1,
+          image: stage_1_staff_1,
         },
         {
           character: '스탭',
@@ -363,12 +412,12 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence: '??? 저 지금 다람쥔데요???',
-          image: stage_1_1,
+          image: stage_1_staff_2,
         },
         {
           character: '스탭',
           sentence: '그게 중요한 게 아니야 지금 ... 빨리 스탠바이 하자.',
-          image: stage_1_1,
+          image: stage_1_staff_2,
         },
         {
           character: '',
@@ -396,137 +445,137 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence: '그래. 소현느나를 만나러 SBS 라디오로 가자!',
-          image: black,
+          image: stage_1_lovegame_sbs,
         },
         {
           character: '',
           sentence: '그렇게 목동 SBS로 찾아간 진람쥐.',
-          image: black,
+          image: stage_1_lovegame_sbs,
         },
         {
           character: '진람쥐',
           sentence: '안녕하세요~ 혹시 소현느나 지금 있나요?',
-          image: black,
+          image: stage_1_lovegame_1,
         },
         {
           character: '소현누나',
           sentence: '어머! 혹시 너 진혁이니?',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_2,
         },
         {
           character: '진람쥐',
           sentence:
             '녜 누나 ... 저 어떡하죠. 자고 일어나보니 다람쥐가 됐어요ㅠㅠ 이런 몸으로 방송을 할 수 있을까요? ㅠㅠ',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_5,
         },
         {
           character: '소현누나',
           sentence: '진람.. 아니 진혁아 괜찮아 다람쥐면 어때? 너라는 사실이 중요한거지',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_5,
         },
         {
           character: '진람쥐',
           sentence: '정말인가요ㅠㅠ 저 다람쥐여도 괜찮을까요? 팬들이 싫어하면 어쩌죠',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_5,
         },
         {
           character: '소현누나',
           sentence:
             '다람쥐인 지금도 충분히 귀엽고 사랑스러운걸! 오늘 찾아온 김에 같이 게스트로 이야기하다 갈래?',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_4,
         },
         {
           character: '진람쥐',
           sentence: '조금 부끄럽지만 ... 좋아요!',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_4,
         },
         {
           character: '',
           sentence: '그렇게 진람쥐는 러브게임 최초의 다람쥐 게스트가 되었다.',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_3,
         },
         {
           character: '',
           sentence:
             '다람쥐로 변해도 즐겁고 유쾌한 진람쥐의 토크는 107.7 MHz과 고릴라를 통해 전국으로 퍼져갔다.',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_3,
         },
         {
           character: '',
           sentence: 'MISSION SUCCESS',
-          image: stage_1_lovegame_1,
+          image: stage_1_lovegame_6,
         },
         {
           character: '소현누나',
           sentence: '축하해. 미션을 통과했구나.',
-          image: stage_1_lovegame_2,
+          image: stage_1_lovegame_7,
         },
         {
           character: '소현누나',
           sentence:
             '너는 다람쥐인 모습으로도 용기 있게 라디오에 출연했기 때문에 이 버섯을 받을 자격이 있어.',
-          image: stage_1_lovegame_2,
+          image: stage_1_lovegame_7,
         },
         {
           character: '획득',
           sentence: "진람쥐는 '용기의 버섯'을(를) 획득했다 !",
-          image: stage_1_lovegame_2,
+          image: stage_1_lovegame_7,
         },
         {
           character: '버섯요정',
           sentence: '축하해. 용기의 버섯을 획득했구나.',
-          image: stage_1_lovegame_2,
+          image: stage_2_talk_0,
         },
         {
           character: '진람쥐',
           sentence: '용기의 버섯? 뭐야 이거 뭐 일곱 개 모아야 사람 되고 ... 그런거야?',
-          image: black,
+          image: stage_2_talk_1,
         },
         {
           character: '버섯요정',
           sentence: '그건 드래곤볼이고... 앞으로 두 가지 버섯만 모으면 넌 사람이 될 수 있어.',
-          image: black,
+          image: stage_2_talk_2,
         },
         {
           character: '진람쥐',
           sentence: '그러면 다음 버섯을 모으려면 어떻게 해야 하니 버섯요정아?',
-          image: black,
+          image: stage_2_talk_3,
         },
         {
           character: '버섯요정',
           sentence: '후훗. 그건 바로바로 ~ 쨘!',
-          image: black,
+          image: stage_2_talk_4,
         },
         {
           character: '',
           sentence: '펑 하는 소리와 함께 나타난 그것은 ... 바로 작고 소중한 버섯이었다.',
-          image: black,
+          image: stage_2_talk_5,
         },
         {
           character: '진람쥐',
           sentence: '?? 이게 뭐야.',
-          image: black,
+          image: stage_2_talk_6,
         },
         {
           character: '버섯요정',
           sentence: '이건 바로 먹으면 어디로든 갈 수 있는 어디로든 버섯이야.',
-          image: black,
+          image: stage_2_talk_7,
         },
         {
           character: '진람쥐',
           sentence: '이거 그냥 어디로든 문 짭 아니야?',
-          image: black,
+          image: stage_2_talk_8,
         },
         {
           character: '버섯요정',
           sentence: '큼큼.. 무슨 그런 섭섭한 버섯... 아니 섭섭한 소리를',
-          image: black,
+          image: stage_2_talk_8,
         },
         {
           character: '버섯요정',
           sentence:
             '아무튼 이 버섯을 먹으면서 네가 가고 싶은 곳을 마음속 깊이 생각하면 그곳으로 이동할 수 있어!',
-          image: black,
+          image: stage_2_talk_8,
         },
       ],
     },
@@ -539,17 +588,17 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence: '그래. 현진느나를 만나러 왜 오수재인가 촬영장으로 가자!',
-          image: black,
+          image: stage_1_rampung_0,
         },
         {
           character: '',
           sentence: '그렇게 왜 오수재인가 촬영장으로 찾아간 진람쥐.',
-          image: black,
+          image: stage_1_rampung_0,
         },
         {
           character: '진람쥐',
           sentence: '안녕하세요~ 혹시 현진느나 지금 현장에 계신가요?',
-          image: stage_1_1,
+          image: stage_1_staff_1,
         },
         {
           character: '스탭',
@@ -564,12 +613,12 @@ export const stageStory = [
         {
           character: '진람쥐',
           sentence: '??? 저 지금 다람쥔데요???',
-          image: stage_1_1,
+          image: stage_1_staff_2,
         },
         {
           character: '스탭',
           sentence: '됐고 일단 빨리 대기하자.',
-          image: stage_1_1,
+          image: stage_1_staff_2,
         },
         {
           character: '',
@@ -609,43 +658,43 @@ export const stageStory = [
         {
           character: '',
           sentence: '눈을 떠보니.. 빠른 비트의 노래소리가 들려왔다.',
-          image: black,
+          image: stage_2_health_0_0,
         },
         {
           character: '???',
           sentence: '회원님. 오셨군요.',
-          image: stage_2_health_1,
+          image: stage_2_health_0_1,
         },
         {
           character: '진람쥐',
           sentence: '형, 저 왔어요. 근데 저 다람쥐가 됐어요 ㅠㅠ',
-          image: stage_2_health_1,
+          image: stage_2_health_0_3,
         },
         {
           character: '짐종국',
           sentence: '그건 됐고 일단 운동을 시작해보자.',
-          image: stage_2_health_1,
+          image: stage_2_health_0_3,
         },
         {
           character: '진람쥐',
           sentence: '앗... 녭',
-          image: stage_2_health_1,
+          image: stage_2_health_0_4,
         },
         {
           character: '',
           sentence: '그렇게 .. 진람쥐는 열심히 PT를 받았다.',
-          image: stage_2_health_1,
+          image: stage_2_health_0_5,
         },
         {
           character: '',
           sentence:
             '종국이  형은 다람쥐가 된 걸 신경도 안 쓰는 것처럼 보였다. 그저 헬스만 계속 시켰다...',
-          image: stage_2_health_1,
+          image: stage_2_health_0_6,
         },
         {
           character: '',
           sentence: '~ 3개월 후 ~',
-          image: black,
+          image: stage_2_health_0_7,
         },
         {
           character: '',
