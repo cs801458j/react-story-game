@@ -78,6 +78,13 @@ import stage_2_topmedia_3 from '../images/game/stage_2_topmedia_3.JPG';
 import stage_2_topmedia_4 from '../images/game/stage_2_topmedia_4.JPG';
 import stage_2_eat_mushroom from '../images/game/stage_2_eat_mushroom.jpeg';
 
+// 3 talk
+import stage_3_talk_0 from '../images/game/stage_3_talk_0.jpeg';
+import stage_3_talk_1 from '../images/game/stage_3_talk_1.jpeg';
+import stage_3_talk_2 from '../images/game/stage_3_talk_2.jpeg';
+import stage_3_talk_3 from '../images/game/stage_3_talk_3.jpeg';
+import stage_3_talk_4 from '../images/game/stage_3_talk_4.jpeg';
+
 //  stage 3
 import stage_3_vlive_1 from '../images/game/stage_3_vlive_1.JPG';
 import stage_3_vlive_2 from '../images/game/stage_3_vlive_2.JPG';
@@ -91,6 +98,16 @@ import stage_3_bubble_2 from '../images/game/stage_3_bubble_2.JPG';
 import stage_3_bubble_3 from '../images/game/stage_3_bubble_3.JPG';
 import stage_3_bubble_4 from '../images/game/stage_3_bubble_4.JPG';
 import stage_3_bubble_5 from '../images/game/stage_3_bubble_5.JPG';
+
+import stage_3_end_0 from '../images/game/stage_3_end_0.jpeg';
+import stage_3_end_1 from '../images/game/stage_3_end_1.jpeg';
+import stage_3_end_2 from '../images/game/stage_3_end_2.jpeg';
+import stage_3_end_3 from '../images/game/stage_3_end_3.jpeg';
+import stage_3_end_4 from '../images/game/stage_3_end_4.jpeg';
+import stage_3_end_5 from '../images/game/stage_3_end_5.jpeg';
+import stage_3_end_6 from '../images/game/stage_3_end_6.jpeg';
+import stage_3_end_7 from '../images/game/stage_3_end_7.jpeg';
+import stage_3_end_8 from '../images/game/stage_3_end_8.jpeg';
 
 // stage title
 import stage_1 from '../images/game/stage_1.jpeg';
@@ -785,38 +802,38 @@ export const stageStory = [
         {
           character: '버섯요정',
           sentence: '축하해. 능력의 버섯을 획득했구나. ',
-          image: black,
+          image: stage_2_talk_0,
         },
         {
           character: '버섯요정',
           sentence: '이제 벌써 마지막 단계야. 마지막으로 네가 해야 할 일을 알려줄게. ',
-          image: black,
+          image: stage_3_talk_0,
         },
         {
           character: '진람쥐',
           sentence: '그래. 내가 마지막으로 뭘 하면 될까?',
-          image: black,
+          image: stage_3_talk_0,
         },
         {
           character: '버섯요정',
           sentence:
             '그건 바로 팬들에게 네가 다람쥐가 된 걸 알리는 거야. 생각해봐. 팬들은 아직 모르고 있잖아?',
-          image: black,
+          image: stage_3_talk_1,
         },
         {
           character: '진람쥐',
           sentence: '맞아... 이젠 브이단도 내가 다람쥐가 된 걸 알아야겠지?',
-          image: black,
+          image: stage_3_talk_2,
         },
         {
           character: '진람쥐',
           sentence: '하지만 두려워 ... 내가 다람쥐로 변했어도 우리 브이단이 나를 사랑해줄까? ',
-          image: black,
+          image: stage_3_talk_3,
         },
         {
           character: '버섯요정',
           sentence: '영원한 비밀은 없으니까 차라리 빨리 말하는 게 나을 거 같은데?',
-          image: black,
+          image: stage_3_talk_4,
         },
       ],
     },
@@ -1039,48 +1056,48 @@ export const stageStory = [
         {
           character: '버섯요정',
           sentence: '축하해. 세 가지 버섯을 모두 모았구나.',
-          image: black,
+          image: stage_3_end_0,
         },
         {
           character: '진람쥐',
           sentence: '맞아. 나를 응원해주는 사람들 덕분에 이 버섯들을 다 모을 수 있었어.',
-          image: black,
+          image: stage_3_end_1,
         },
         {
           character: '버섯요정',
           sentence: '그럼. 항상 너를 응원하는 사람들이 많다는 걸 잊지 말라구! ',
-          image: black,
+          image: stage_3_end_2,
         },
         {
           character: '버섯요정',
           sentence: '자, 약속한 대로 널 사람으로 돌려줄게. ',
-          image: black,
+          image: stage_3_end_3,
         },
         {
           character: '진람쥐',
           sentence: '고마워, 버섯요정아! 그리고 너도 잊지 않을게.',
-          image: black,
+          image: stage_3_end_4,
         },
         {
           character: '',
           sentence: '펑! 하는 소리와 함께 진람쥐. 아니 진혁은 현실로 돌아왔다.',
-          image: black,
+          image: stage_3_end_5,
         },
         {
           character: '진혁',
           sentence: '휴~ 다행이얌. 이제 다시 나로 돌아왔구나!',
-          image: black,
+          image: stage_3_end_6,
         },
         {
           character: '',
           sentence:
             '그렇게 사람으로 돌아온 진혁이는 27살 생일을 브이단과 행복하게 보낼 수 있었다고 한다.',
-          image: black,
+          image: stage_3_end_7,
         },
         {
           character: '',
           sentence: '- THE END -',
-          image: black,
+          image: stage_3_end_8,
         },
       ],
     },
